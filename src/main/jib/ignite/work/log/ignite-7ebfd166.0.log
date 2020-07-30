@@ -1,0 +1,1254 @@
+[10:12:01,999][WARNING][main][G] Ignite work directory is not provided, automatically resolved to: /home/xshaini/apache-ignite-2.7.5-bin/work
+[10:12:02,221][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.7.6#20190911-sha1:21f7ca41
+>>> 2019 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[10:12:02,229][INFO][main][IgniteKernal] Config URL: file:/home/xshaini/apache-ignite-2.7.5-bin/examples/config/example-ignite.xml
+[10:12:02,254][INFO][main][IgniteKernal] IgniteConfiguration [igniteInstanceName=null, pubPoolSize=8, svcPoolSize=8, callbackPoolSize=8, stripedPoolSize=8, sysPoolSize=8, mgmtPoolSize=4, igfsPoolSize=4, dataStreamerPoolSize=8, utilityCachePoolSize=8, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=8, igniteHome=/home/xshaini/apache-ignite-2.7.5-bin, igniteWorkDir=/home/xshaini/apache-ignite-2.7.5-bin/work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@501edcf1, nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, marsh=BinaryMarshaller [], marshLocJobs=false, daemon=false, p2pEnabled=true, netTimeout=5000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$FirstConnectionPolicy@682b2fa, enableForcibleNodeKill=false, enableTroubleshootingLog=false, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=4, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@217ed35e[Count = 1], stopping=false], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@7dcf94f8, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@3eb25e1a, addrRslvr=null, encryptionSpi=org.apache.ignite.spi.encryption.noop.NoopEncryptionSpi@477b4cdf, clientMode=false, rebalanceThreadPoolSize=1, txCfg=TransactionConfiguration [txSerEnabled=false, dfltIsolation=REPEATABLE_READ, dfltConcurrency=PESSIMISTIC, dfltTxTimeout=0, txTimeoutOnPartitionMapExchange=0, pessimisticTxLogSize=0, pessimisticTxLogLinger=10000, tmLookupClsName=null, txManagerFactory=null, useJtaSync=false], cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, sysWorkerBlockedTimeout=null, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=ConnectorConfiguration [jettyPath=null, host=null, port=11211, noDelay=true, directBuf=false, sndBufSize=32768, rcvBufSize=32768, idleQryCurTimeout=600000, idleQryCurCheckFreq=60000, sndQueueLimit=0, selectorCnt=4, idleTimeout=7000, sslEnabled=false, sslClientAuth=false, sslCtxFactory=null, sslFactory=null, portRange=100, threadPoolSize=8, msgInterceptor=null], odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=DataStorageConfiguration [sysRegionInitSize=41943040, sysRegionMaxSize=104857600, pageSize=0, concLvl=0, dfltDataRegConf=DataRegionConfiguration [name=default, maxSize=3334422528, initSize=268435456, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=false, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=false, checkpointPageBufSize=0], dataRegions=null, storagePath=null, checkpointFreq=180000, lockWaitTime=10000, checkpointThreads=4, checkpointWriteOrder=SEQUENTIAL, walHistSize=20, maxWalArchiveSize=1073741824, walSegments=10, walSegmentSize=67108864, walPath=db/wal, walArchivePath=db/wal/archive, metricsEnabled=false, walMode=LOG_ONLY, walTlbSize=131072, walBuffSize=0, walFlushFreq=2000, walFsyncDelay=1000, walRecordIterBuffSize=67108864, alwaysWriteFullPages=false, fileIOFactory=org.apache.ignite.internal.processors.cache.persistence.file.AsyncFileIOFactory@3b0090a4, metricsSubIntervalCnt=5, metricsRateTimeInterval=60000, walAutoArchiveAfterInactivity=-1, writeThrottlingEnabled=false, walCompactionEnabled=false, walCompactionLevel=1, checkpointReadLockTimeout=null], activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=8, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], mvccVacuumThreadCnt=2, mvccVacuumFreq=5000, authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[10:12:02,255][INFO][main][IgniteKernal] Daemon mode: off
+[10:12:02,255][INFO][main][IgniteKernal] OS: Linux 4.15.0-88-generic amd64
+[10:12:02,255][INFO][main][IgniteKernal] OS user: xshaini
+[10:12:02,256][INFO][main][IgniteKernal] PID: 18989
+[10:12:02,257][INFO][main][IgniteKernal] Language runtime: Scala ver. 2.11.11
+[10:12:02,257][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_211-b12 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.211-b12
+[10:12:02,259][INFO][main][IgniteKernal] VM total memory: 3.5GB
+[10:12:02,259][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[10:12:02,259][INFO][main][IgniteKernal] Logger: JavaLogger [quiet=true, config=null]
+[10:12:02,259][INFO][main][IgniteKernal] IGNITE_HOME=/home/xshaini/apache-ignite-2.7.5-bin
+[10:12:02,259][INFO][main][IgniteKernal] VM arguments: [-Dfile.encoding=UTF-8, -Xbootclasspath/p:/home/xshaini/scala-SDK-4.7.0/eclipse/plugins/org.scala-ide.scala211.jars_4.7.0.201709291351/target/jars/scala-library.jar:/home/xshaini/scala-SDK-4.7.0/eclipse/plugins/org.scala-ide.scala211.jars_4.7.0.201709291351/target/jars/scala-reflect.jar]
+[10:12:02,260][INFO][main][IgniteKernal] System cache's DataRegion size is configured to 40 MB. Use DataStorageConfiguration.systemRegionInitialSize property to change the setting.
+[10:12:02,266][INFO][main][IgniteKernal] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[10:12:02,268][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[10:12:02,268][WARNING][main][IgniteKernal] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[10:12:02,275][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /home/xshaini/apache-ignite-2.7.5-bin/libs/licenses
+[10:12:02,277][WARNING][pub-#22][GridDiagnostic] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[10:12:02,359][INFO][main][IgnitePluginProcessor] Configured plugins:
+[10:12:02,359][INFO][main][IgnitePluginProcessor]   ^-- None
+[10:12:02,360][INFO][main][IgnitePluginProcessor] 
+[10:12:02,362][INFO][main][FailureProcessor] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=[SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[10:12:02,422][INFO][main][TcpCommunicationSpi] Successfully bound communication NIO server to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0, selectorsCnt=4, selectorSpins=0, pairedConn=false]
+[10:12:02,426][WARNING][main][TcpCommunicationSpi] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[10:12:02,449][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[10:12:02,483][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[10:12:02,495][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[10:12:02,949][WARNING][main][IgniteCacheDatabaseSharedManager] DataRegionConfiguration.maxWalArchiveSize instead DataRegionConfiguration.walHistorySize would be used for removing old archive wal files
+[10:12:02,976][INFO][main][PartitionsEvictManager] Evict partition permits=2
+[10:12:03,460][INFO][main][ClientListenerProcessor] Client connector processor has started on TCP port 10800
+[10:12:03,597][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11211]
+[10:12:03,677][INFO][main][IgniteKernal] Non-loopback local IPs: 172.168.1.60, fe80:0:0:0:c537:4cc4:a945:74b5%wlp2s0
+[10:12:03,677][INFO][main][IgniteKernal] Enabled local MACs: 1002B5D9B0B6
+[10:12:03,816][INFO][main][TcpDiscoverySpi] Connection check threshold is calculated: 10000
+[10:12:03,824][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47500, localHost=0.0.0.0/0.0.0.0, locNodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f]
+[10:12:05,094][INFO][disco-notifier-worker-#41][MvccProcessorImpl] Assigned mvcc coordinator [crd=MvccCoordinator [nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, crdVer=1583485925080, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], crdNode=TcpDiscoveryNode [id=7ebfd166-614f-4ee4-a546-f2de62964b4f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583485923823, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false]]
+[10:12:05,171][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], mvccCrd=MvccCoordinator [nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, crdVer=1583485925080, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=true, crd=true, evt=NODE_JOINED, evtNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, customEvt=null, allowMerge=false]
+[10:12:05,244][INFO][exchange-worker-#43][msg] Components activation performed in 61 ms.
+[10:12:05,594][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=ignite-sys-cache, id=-2100569601, memoryPolicyName=sysMemPlc, mode=REPLICATED, atomicity=TRANSACTIONAL, backups=2147483647, mvcc=false], encryptionEnabled=false]
+[10:12:05,596][INFO][exchange-worker-#43][GridCacheProcessor] Starting caches on local join performed in 348 ms.
+[10:12:05,628][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Skipped waiting for partitions release future (local node is joining) [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]]
+[10:12:05,899][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]]
+[10:12:05,899][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[10:12:05,910][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 11 ms.
+[10:12:05,915][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 3 ms.
+[10:12:06,023][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 99 ms.
+[10:12:06,024][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[10:12:06,025][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], err=null]
+[10:12:06,028][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Detecting lost partitions performed in 3 ms.
+[10:12:06,029][INFO][exchange-worker-#43][MvccProcessorImpl] Initialize local node as mvcc coordinator [node=7ebfd166-614f-4ee4-a546-f2de62964b4f, crdVer=1583485925080]
+[10:12:06,048][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=ignite-sys-cache, localNodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f
+[10:12:06,054][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], evt=NODE_JOINED, evtNode=TcpDiscoveryNode [id=7ebfd166-614f-4ee4-a546-f2de62964b4f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583485923823, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], durationFromInit=884]
+[10:12:06,055][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], crd=true]
+[10:12:06,086][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=0], force=false, evt=NODE_JOINED, node=7ebfd166-614f-4ee4-a546-f2de62964b4f]
+[10:12:06,236][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[10:12:06,238][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[10:12:06,241][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[10:12:06,241][INFO][main][IgniteKernal]   ^-- Enable G1 Garbage Collector (add '-XX:+UseG1GC' to JVM options)
+[10:12:06,242][INFO][main][IgniteKernal]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[10:12:06,242][INFO][main][IgniteKernal]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[10:12:06,242][INFO][main][IgniteKernal]   ^-- Disable processing of calls to System.gc() (add '-XX:+DisableExplicitGC' to JVM options)
+[10:12:06,243][INFO][main][IgniteKernal] Refer to this page for more performance suggestions: https://apacheignite.readme.io/docs/jvm-and-system-tuning
+[10:12:06,243][INFO][main][IgniteKernal] 
+[10:12:06,243][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[10:12:06,248][INFO][main][IgniteKernal] Data Regions Configured:
+[10:12:06,248][INFO][main][IgniteKernal]   ^-- default [initSize=256.0 MiB, maxSize=3.1 GiB, persistence=false]
+[10:12:06,249][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 2.7.6#20190911-sha1:21f7ca41c4348909e2fd26ccf59b5b2ce1f4474e
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 4.15.0-88-generic amd64
+>>> CPU(s): 4
+>>> Heap: 3.5GB
+>>> VM name: 18989@eis-seoul
+>>> Local node [ID=7EBFD166-614F-4EE4-A546-F2DE62964B4F, order=1, clientMode=false]
+>>> Local node addresses: [172.168.1.60/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /172.168.1.60]
+>>> Local ports: TCP:10800 TCP:11211 TCP:47100 UDP:47400 TCP:47500 
+
+[10:12:06,255][INFO][main][GridDiscoveryManager] Topology snapshot [ver=1, locNode=7ebfd166, servers=1, clients=0, state=ACTIVE, CPUs=4, offheap=3.1GB, heap=3.5GB]
+[10:12:06,402][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], mvccCrd=MvccCoordinator [nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, crdVer=1583485925080, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, customEvt=DynamicCacheChangeBatch [id=0f6ad1fa071-ffeecac7-0dd0-4671-ba7d-5ee4d0c3977a, reqs=[DynamicCacheChangeRequest [cacheName=Entity2IDcachee, hasCfg=true, nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[Entity2IDcachee], stopCaches=null, startGrps=[Entity2IDcachee], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[10:12:06,403][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 1 ms.
+[10:12:06,764][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=Entity2IDcachee, id=-1087112307, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[10:12:06,770][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 366 ms.
+[10:12:06,779][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 8 ms.
+[10:12:06,792][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[10:12:06,799][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]]
+[10:12:06,799][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[10:12:07,061][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]
+[10:12:07,062][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[10:12:07,063][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 1 ms.
+[10:12:07,064][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 1 ms.
+[10:12:07,116][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 44 ms.
+[10:12:07,116][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[10:12:07,116][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], err=null]
+[10:12:07,128][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=Entity2IDcachee, localNodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f
+[10:12:07,128][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=7ebfd166-614f-4ee4-a546-f2de62964b4f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583485923823, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], durationFromInit=726]
+[10:12:07,129][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], crd=true]
+[10:12:07,159][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (obsolete exchange ID) [top=AffinityTopologyVersion [topVer=1, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, node=7ebfd166-614f-4ee4-a546-f2de62964b4f]
+[10:12:07,159][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], mvccCrd=MvccCoordinator [nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, crdVer=1583485925080, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, customEvt=DynamicCacheChangeBatch [id=9f6ad1fa071-ffeecac7-0dd0-4671-ba7d-5ee4d0c3977a, reqs=[DynamicCacheChangeRequest [cacheName=Relation2IDcachee, hasCfg=true, nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[Relation2IDcachee], stopCaches=null, startGrps=[Relation2IDcachee], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[10:12:07,160][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 0 ms.
+[10:12:07,177][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=Relation2IDcachee, id=1689532820, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[10:12:07,177][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 17 ms.
+[10:12:07,178][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 1 ms.
+[10:12:07,179][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[10:12:07,179][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2]]]
+[10:12:07,179][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[10:12:07,413][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=2]]
+[10:12:07,413][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[10:12:07,415][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 2 ms.
+[10:12:07,425][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 10 ms.
+[10:12:07,444][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 16 ms.
+[10:12:07,444][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[10:12:07,444][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], err=null]
+[10:12:07,460][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=Relation2IDcachee, localNodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f
+[10:12:07,461][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=7ebfd166-614f-4ee4-a546-f2de62964b4f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583485923823, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], durationFromInit=307]
+[10:12:07,462][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], crd=true]
+[10:12:07,473][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=2], force=false, evt=DISCOVERY_CUSTOM_EVT, node=7ebfd166-614f-4ee4-a546-f2de62964b4f]
+[10:12:07,479][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], mvccCrd=MvccCoordinator [nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, crdVer=1583485925080, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, customEvt=DynamicCacheChangeBatch [id=ff6ad1fa071-ffeecac7-0dd0-4671-ba7d-5ee4d0c3977a, reqs=[DynamicCacheChangeRequest [cacheName=E_embeddingscachee, hasCfg=true, nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[E_embeddingscachee], stopCaches=null, startGrps=[E_embeddingscachee], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[10:12:07,479][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 0 ms.
+[10:12:07,544][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=E_embeddingscachee, id=195644633, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[10:12:07,544][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 65 ms.
+[10:12:07,545][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 1 ms.
+[10:12:07,547][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[10:12:07,548][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3]]]
+[10:12:07,548][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[10:12:07,616][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=3]]
+[10:12:07,616][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[10:12:07,621][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 5 ms.
+[10:12:07,623][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 2 ms.
+[10:12:07,637][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 10 ms.
+[10:12:07,637][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[10:12:07,637][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], err=null]
+[10:12:07,648][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=E_embeddingscachee, localNodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f
+[10:12:07,649][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=7ebfd166-614f-4ee4-a546-f2de62964b4f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583485923823, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], durationFromInit=178]
+[10:12:07,650][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], crd=true]
+[10:12:07,666][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (obsolete exchange ID) [top=AffinityTopologyVersion [topVer=1, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, node=7ebfd166-614f-4ee4-a546-f2de62964b4f]
+[10:12:07,667][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], mvccCrd=MvccCoordinator [nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, crdVer=1583485925080, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, customEvt=DynamicCacheChangeBatch [id=507ad1fa071-ffeecac7-0dd0-4671-ba7d-5ee4d0c3977a, reqs=[DynamicCacheChangeRequest [cacheName=R_embeddingscachee, hasCfg=true, nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[R_embeddingscachee], stopCaches=null, startGrps=[R_embeddingscachee], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[10:12:07,667][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 0 ms.
+[10:12:07,681][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=R_embeddingscachee, id=118605932, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[10:12:07,681][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 14 ms.
+[10:12:07,682][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 1 ms.
+[10:12:07,687][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[10:12:07,687][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4]]]
+[10:12:07,691][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[10:12:07,830][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=4]]
+[10:12:07,830][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[10:12:07,841][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 11 ms.
+[10:12:07,844][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 3 ms.
+[10:12:07,859][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 11 ms.
+[10:12:07,867][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[10:12:07,868][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], err=null]
+[10:12:07,877][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=R_embeddingscachee, localNodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f
+[10:12:07,877][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=7ebfd166-614f-4ee4-a546-f2de62964b4f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583485923823, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], durationFromInit=215]
+[10:12:07,877][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], crd=true]
+[10:12:07,884][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=4], force=false, evt=DISCOVERY_CUSTOM_EVT, node=7ebfd166-614f-4ee4-a546-f2de62964b4f]
+[10:12:07,891][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], mvccCrd=MvccCoordinator [nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, crdVer=1583485925080, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, customEvt=DynamicCacheChangeBatch [id=b07ad1fa071-ffeecac7-0dd0-4671-ba7d-5ee4d0c3977a, reqs=[DynamicCacheChangeRequest [cacheName=tripleIde, hasCfg=true, nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[tripleIde], stopCaches=null, startGrps=[tripleIde], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[10:12:07,892][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 1 ms.
+[10:12:07,898][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=tripleIde, id=-386511508, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[10:12:07,898][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 6 ms.
+[10:12:07,899][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 1 ms.
+[10:12:07,906][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[10:12:07,906][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5]]]
+[10:12:07,907][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[10:12:07,974][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=5]]
+[10:12:07,975][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[10:12:07,980][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 5 ms.
+[10:12:07,985][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 4 ms.
+[10:12:07,997][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 7 ms.
+[10:12:07,997][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[10:12:07,997][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], err=null]
+[10:12:08,013][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=tripleIde, localNodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f
+[10:12:08,015][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=7ebfd166-614f-4ee4-a546-f2de62964b4f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583485923823, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], durationFromInit=118]
+[10:12:08,015][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], crd=true]
+[10:12:08,027][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (obsolete exchange ID) [top=AffinityTopologyVersion [topVer=1, minorTopVer=5], evt=DISCOVERY_CUSTOM_EVT, node=7ebfd166-614f-4ee4-a546-f2de62964b4f]
+[10:12:08,031][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], mvccCrd=MvccCoordinator [nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, crdVer=1583485925080, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, customEvt=DynamicCacheChangeBatch [id=117ad1fa071-ffeecac7-0dd0-4671-ba7d-5ee4d0c3977a, reqs=[DynamicCacheChangeRequest [cacheName=allTriplesCache, hasCfg=true, nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[allTriplesCache], stopCaches=null, startGrps=[allTriplesCache], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[10:12:08,031][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 0 ms.
+[10:12:08,049][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=allTriplesCache, id=1394360558, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[10:12:08,050][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 17 ms.
+[10:12:08,057][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 7 ms.
+[10:12:08,058][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[10:12:08,059][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6]]]
+[10:12:08,059][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[10:12:08,121][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=6]]
+[10:12:08,122][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[10:12:08,130][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 8 ms.
+[10:12:08,134][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 4 ms.
+[10:12:08,148][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 10 ms.
+[10:12:08,148][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[10:12:08,148][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], err=null]
+[10:12:08,160][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=allTriplesCache, localNodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f
+[10:12:08,171][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=7ebfd166-614f-4ee4-a546-f2de62964b4f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583485923823, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], durationFromInit=151]
+[10:12:08,171][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], crd=true]
+[10:12:08,177][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (obsolete exchange ID) [top=AffinityTopologyVersion [topVer=1, minorTopVer=6], evt=DISCOVERY_CUSTOM_EVT, node=7ebfd166-614f-4ee4-a546-f2de62964b4f]
+[10:12:08,177][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], mvccCrd=MvccCoordinator [nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, crdVer=1583485925080, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, customEvt=DynamicCacheChangeBatch [id=717ad1fa071-ffeecac7-0dd0-4671-ba7d-5ee4d0c3977a, reqs=[DynamicCacheChangeRequest [cacheName=testTriplecachee, hasCfg=true, nodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[testTriplecachee], stopCaches=null, startGrps=[testTriplecachee], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[10:12:08,178][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 1 ms.
+[10:12:08,210][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=testTriplecachee, id=2015714483, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[10:12:08,210][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 26 ms.
+[10:12:08,211][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 1 ms.
+[10:12:08,218][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[10:12:08,222][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7]]]
+[10:12:08,224][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[10:12:08,278][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=7]]
+[10:12:08,278][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[10:12:08,286][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 8 ms.
+[10:12:08,293][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 7 ms.
+[10:12:08,304][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 7 ms.
+[10:12:08,304][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[10:12:08,304][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], err=null]
+[10:12:08,315][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=testTriplecachee, localNodeId=7ebfd166-614f-4ee4-a546-f2de62964b4f
+[10:12:08,315][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=7ebfd166-614f-4ee4-a546-f2de62964b4f, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=7ebfd166-614f-4ee4-a546-f2de62964b4f, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583485923823, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], durationFromInit=144]
+[10:12:08,315][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], crd=true]
+[10:12:08,324][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=7], force=false, evt=DISCOVERY_CUSTOM_EVT, node=7ebfd166-614f-4ee4-a546-f2de62964b4f]
+[10:12:08,514][WARNING][main][DataStreamerImpl] Data streamer will not overwrite existing cache entries for better performance (to change, set allowOverwrite to true)
+[10:12:13,988][WARNING][data-streamer-stripe-3-#12][GridQueryProcessor] Key-value pair is not inserted into any SQL table [cacheName=E_embeddingscachee, valType=breeze.linalg.DenseVector$SerializedForm]
+[10:12:13,989][WARNING][data-streamer-stripe-3-#12][GridQueryProcessor]   ^-- Value type(s) are specified via CacheConfiguration.indexedTypes or CacheConfiguration.queryEntities
+[10:12:13,989][WARNING][data-streamer-stripe-3-#12][GridQueryProcessor]   ^-- Make sure that same type(s) used when adding Object or BinaryObject to cache
+[10:12:13,989][WARNING][data-streamer-stripe-3-#12][GridQueryProcessor]   ^-- Otherwise, entries will be stored in cache, but not appear as SQL Table rows
+[10:12:17,233][WARNING][data-streamer-stripe-3-#12][GridQueryProcessor] Key-value pair is not inserted into any SQL table [cacheName=testTriplecachee, valType=TripleID]
+[10:13:06,242][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:01:00.007]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.33%, avg=28.98%, GC=0.03%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=750MB, free=78.78%, comm=1456MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=8, qSize=0]
+[10:13:06,242][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:13:15,163][INFO][ignite-update-notifier-timer][GridUpdateNotifier] Update status is not available.
+[10:14:06,244][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:02:00.012]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.5%, avg=27.3%, GC=0.13%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=154MB, free=95.63%, comm=1508MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:14:06,244][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:15:06,245][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:03:00.012]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.67%, avg=26.65%, GC=0.1%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=314MB, free=91.1%, comm=1219MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:15:06,245][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:16:06,244][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:04:00.014]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.57%, avg=26.34%, GC=0.27%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=743MB, free=78.96%, comm=1043MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:16:06,244][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:17:06,252][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:05:00.021]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.6%, avg=26.16%, GC=0.2%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=215MB, free=93.91%, comm=835MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:17:06,252][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:18:06,260][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:06:00.025]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.57%, avg=26.06%, GC=0.17%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=280MB, free=92.06%, comm=834MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=5, qSize=0]
+[10:18:06,260][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:19:06,260][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:07:00.031]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.57%, avg=25.98%, GC=0.17%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=276MB, free=92.18%, comm=825MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:19:06,260][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:20:06,269][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:08:00.040]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.57%, avg=25.94%, GC=0.23%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=391MB, free=88.92%, comm=762MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:20:06,269][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:21:06,269][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:09:00.041]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.67%, avg=25.9%, GC=0.33%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=486MB, free=86.22%, comm=746MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:21:06,270][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:22:06,280][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:10:00.050]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.57%, avg=25.86%, GC=0.27%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=510MB, free=85.56%, comm=816MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:22:06,280][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:23:06,284][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:11:00.050]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.43%, avg=25.84%, GC=0.17%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=65MB, free=98.15%, comm=687MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:23:06,285][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:24:06,286][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:12:00.055]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.73%, avg=25.82%, GC=0.23%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=474MB, free=86.58%, comm=688MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:24:06,286][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:25:06,293][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:13:00.065]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.67%, avg=25.8%, GC=0.2%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=308MB, free=91.27%, comm=606MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:25:06,294][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:26:06,300][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:14:00.070]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.57%, avg=25.78%, GC=0.23%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=312MB, free=91.17%, comm=755MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:26:06,300][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:27:06,308][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:15:00.077]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.77%, avg=25.77%, GC=0.23%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=357MB, free=89.9%, comm=681MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:27:06,309][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:28:06,307][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:16:00.078]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.5%, avg=25.75%, GC=0.23%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=576MB, free=83.68%, comm=756MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:28:06,307][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:29:06,322][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:17:00.086]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.5%, avg=25.74%, GC=0.27%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=346MB, free=90.2%, comm=753MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:29:06,323][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:30:06,324][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:18:00.095]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.77%, avg=25.74%, GC=0.23%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=479MB, free=86.43%, comm=734MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:30:06,324][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:31:06,334][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:19:00.105]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.77%, avg=25.73%, GC=0.23%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=486MB, free=86.23%, comm=640MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:31:06,334][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:32:06,344][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:20:00.115]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.73%, avg=25.72%, GC=0.27%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=140MB, free=96.04%, comm=677MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:32:06,344][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:33:06,351][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:21:00.119]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.67%, avg=25.71%, GC=0.2%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=352MB, free=90.02%, comm=735MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:33:06,351][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[10:34:06,350][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=00:22:00.121]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.67%, avg=25.71%, GC=0.27%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=344MB, free=90.26%, comm=682MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[10:34:06,351][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[11:21:00,429][SEVERE][ttl-cleanup-worker-#45][G] Blocked system-critical thread has been detected. This can lead to cluster-wide undefined behaviour [threadName=grid-nio-worker-tcp-comm-3, blockedFor=2806s]
+[11:21:00,437][WARNING][jvm-pause-detector-worker][IgniteKernal] Possible too long JVM pause: 2805112 milliseconds.
+[11:21:00,441][WARNING][ttl-cleanup-worker-#45][G] Thread [name="grid-nio-worker-tcp-comm-3-#27", id=38, state=RUNNABLE, blockCnt=0, waitCnt=0]
+
+[11:21:00,441][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=01:08:54.210]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=4.33%, avg=25.71%, GC=0.07%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=124MB, free=96.48%, comm=661MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=1, idle=5, qSize=0]
+[11:21:00,477][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[11:21:00,476][SEVERE][ttl-cleanup-worker-#45][] Critical system error detected. Will be handled accordingly to configured handler [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=[SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]], failureCtx=FailureContext [type=SYSTEM_WORKER_BLOCKED, err=class o.a.i.IgniteException: GridWorker [name=grid-nio-worker-tcp-comm-3, igniteInstanceName=null, finished=false, heartbeatTs=1583490060428]]]
+class org.apache.ignite.IgniteException: GridWorker [name=grid-nio-worker-tcp-comm-3, igniteInstanceName=null, finished=false, heartbeatTs=1583490060428]
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance$2.apply(IgnitionEx.java:1831)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance$2.apply(IgnitionEx.java:1826)
+	at org.apache.ignite.internal.worker.WorkersRegistry.onIdle(WorkersRegistry.java:233)
+	at org.apache.ignite.internal.util.worker.GridWorker.onIdle(GridWorker.java:297)
+	at org.apache.ignite.internal.processors.cache.GridCacheSharedTtlCleanupManager$CleanupWorker.body(GridCacheSharedTtlCleanupManager.java:151)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+[11:21:00,483][WARNING][ttl-cleanup-worker-#45][FailureProcessor] No deadlocked threads detected.
+[11:21:00,552][WARNING][ttl-cleanup-worker-#45][FailureProcessor] Thread dump at 2020/03/06 11:21:00 CET
+Thread [name="sys-#180", id=202, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@17f5fbdf, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-#179", id=201, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@17f5fbdf, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-#178", id=200, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@17f5fbdf, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-#177", id=199, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@17f5fbdf, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-#176", id=198, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@17f5fbdf, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-#175", id=197, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@17f5fbdf, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="ttl-cleanup-worker-#45", id=67, state=RUNNABLE, blockCnt=1, waitCnt=2657]
+        at sun.management.ThreadImpl.dumpThreads0(Native Method)
+        at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+        at o.a.i.i.util.IgniteUtils.dumpThreads(IgniteUtils.java:1368)
+        at o.a.i.i.processors.failure.FailureProcessor.process(FailureProcessor.java:128)
+        - locked o.a.i.i.processors.failure.FailureProcessor@291bb857
+        at o.a.i.i.processors.failure.FailureProcessor.process(FailureProcessor.java:104)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance$2.apply(IgnitionEx.java:1829)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance$2.apply(IgnitionEx.java:1826)
+        at o.a.i.i.worker.WorkersRegistry.onIdle(WorkersRegistry.java:233)
+        at o.a.i.i.util.worker.GridWorker.onIdle(GridWorker.java:297)
+        at o.a.i.i.processors.cache.GridCacheSharedTtlCleanupManager$CleanupWorker.body(GridCacheSharedTtlCleanupManager.java:151)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="session-timeout-worker-#34", id=49, state=TIMED_WAITING, blockCnt=0, waitCnt=1330]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.processors.rest.GridRestProcessor$4.body(GridRestProcessor.java:495)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="srvc-deploy-#44", id=65, state=WAITING, blockCnt=0, waitCnt=8]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@46b6c42f, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+        at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="exchange-worker-#43", id=64, state=TIMED_WAITING, blockCnt=0, waitCnt=269]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7e21a571, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:522)
+        at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:684)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager$ExchangeWorker.body0(GridCachePartitionExchangeManager.java:2626)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager$ExchangeWorker.body(GridCachePartitionExchangeManager.java:2553)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="ignite-update-notifier-timer", id=63, state=TIMED_WAITING, blockCnt=1, waitCnt=63]
+    Lock [object=java.util.TaskQueue@46329269, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.util.TimerThread.mainLoop(Timer.java:552)
+        at java.util.TimerThread.run(Timer.java:505)
+
+Thread [name="upd-ver-checker", id=62, state=TIMED_WAITING, blockCnt=0, waitCnt=266]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.processors.cluster.GridUpdateNotifier$1.run(GridUpdateNotifier.java:115)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="disco-event-worker-#42", id=61, state=WAITING, blockCnt=0, waitCnt=689]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@321f53f8, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+        at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryWorker.body0(GridDiscoveryManager.java:2856)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryWorker.body(GridDiscoveryManager.java:2825)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="tcp-disco-ip-finder-cleaner-#5", id=60, state=TIMED_WAITING, blockCnt=0, waitCnt=43]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.spi.discovery.tcp.ServerImpl$IpFinderCleaner.body(ServerImpl.java:1960)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="tcp-disco-multicast-addr-sender-#4", id=59, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at java.net.PlainDatagramSocketImpl.receive0(Native Method)
+        - locked java.net.PlainDatagramSocketImpl@42f87e28
+        at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+        - locked java.net.PlainDatagramSocketImpl@42f87e28
+        at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+        - locked java.net.DatagramPacket@3101512b
+        - locked java.net.MulticastSocket@63f23cb8
+        at o.a.i.spi.discovery.tcp.ipfinder.multicast.TcpDiscoveryMulticastIpFinder$AddressSender.body(TcpDiscoveryMulticastIpFinder.java:882)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="tcp-disco-srvr-#3", id=58, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at java.net.PlainSocketImpl.socketAccept(Native Method)
+        at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+        at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+        at java.net.ServerSocket.accept(ServerSocket.java:513)
+        at o.a.i.spi.discovery.tcp.ServerImpl$TcpServer.body(ServerImpl.java:5845)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.spi.discovery.tcp.ServerImpl$TcpServerThread.body(ServerImpl.java:5763)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="tcp-disco-msg-worker-#2", id=57, state=TIMED_WAITING, blockCnt=1, waitCnt=131595]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2bba33ad, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:522)
+        at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:684)
+        at o.a.i.spi.discovery.tcp.ServerImpl$MessageWorker.body(ServerImpl.java:7183)
+        at o.a.i.spi.discovery.tcp.ServerImpl$RingMessageWorker.body(ServerImpl.java:2700)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.spi.discovery.tcp.ServerImpl$MessageWorkerThread.body(ServerImpl.java:7119)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="disco-notifier-worker-#41", id=56, state=WAITING, blockCnt=1, waitCnt=689]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2a3201cc, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+        at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryMessageNotifierWorker.body0(GridDiscoveryManager.java:2660)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryMessageNotifierWorker.body(GridDiscoveryManager.java:2705)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-data-loader-flusher-#40", id=55, state=WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@110195a8, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+        at java.util.concurrent.DelayQueue.take(DelayQueue.java:211)
+        at o.a.i.i.processors.datastreamer.DataStreamProcessor$2.body(DataStreamProcessor.java:109)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-rest-3-#38", id=53, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@63647ccc
+        - locked java.util.Collections$UnmodifiableSet@19b90c56
+        - locked sun.nio.ch.EPollSelectorImpl@23bf42cc
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-rest-2-#37", id=52, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@3e0e2fc6
+        - locked java.util.Collections$UnmodifiableSet@7ecca6d7
+        - locked sun.nio.ch.EPollSelectorImpl@2f46dee4
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-rest-1-#36", id=51, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@76b640e2
+        - locked java.util.Collections$UnmodifiableSet@390931ed
+        - locked sun.nio.ch.EPollSelectorImpl@2268d205
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-rest-0-#35", id=50, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@3b408952
+        - locked java.util.Collections$UnmodifiableSet@7fb56f88
+        - locked sun.nio.ch.EPollSelectorImpl@f43bfca
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="nio-acceptor-tcp-rest-#39", id=54, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked sun.nio.ch.Util$3@6b5fbcdd
+        - locked java.util.Collections$UnmodifiableSet@546ab2fd
+        - locked sun.nio.ch.EPollSelectorImpl@774ed7
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.accept(GridNioServer.java:2926)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.body(GridNioServer.java:2874)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-3-#32", id=47, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@12d81cfc
+        - locked java.util.Collections$UnmodifiableSet@477f32e
+        - locked sun.nio.ch.EPollSelectorImpl@50b5407
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-2-#31", id=46, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@3fb0b387
+        - locked java.util.Collections$UnmodifiableSet@6d5d7771
+        - locked sun.nio.ch.EPollSelectorImpl@56080777
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-1-#30", id=45, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@97ccadd
+        - locked java.util.Collections$UnmodifiableSet@33ea7cfe
+        - locked sun.nio.ch.EPollSelectorImpl@350a630d
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-0-#29", id=44, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@232fe964
+        - locked java.util.Collections$UnmodifiableSet@4c6ae5fe
+        - locked sun.nio.ch.EPollSelectorImpl@2c076d01
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="nio-acceptor-client-listener-#33", id=48, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked sun.nio.ch.Util$3@4a737187
+        - locked java.util.Collections$UnmodifiableSet@164bd564
+        - locked sun.nio.ch.EPollSelectorImpl@d158746
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.accept(GridNioServer.java:2926)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.body(GridNioServer.java:2874)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="tcp-comm-worker-#1", id=43, state=TIMED_WAITING, blockCnt=0, waitCnt=3]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1a6d8c80, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at o.a.i.spi.communication.tcp.TcpCommunicationSpi$CommunicationWorker.body(TcpCommunicationSpi.java:4287)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.spi.communication.tcp.TcpCommunicationSpi$5.body(TcpCommunicationSpi.java:2237)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="grid-nio-worker-tcp-comm-3-#27", id=38, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@4b433903
+        - locked java.util.Collections$UnmodifiableSet@3eb35fa
+        - locked sun.nio.ch.EPollSelectorImpl@2265bd76
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-2-#26", id=37, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@541a3c36
+        - locked java.util.Collections$UnmodifiableSet@6439c97
+        - locked sun.nio.ch.EPollSelectorImpl@5cdd2d40
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-1-#25", id=36, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@535ca5a0
+        - locked java.util.Collections$UnmodifiableSet@5622d871
+        - locked sun.nio.ch.EPollSelectorImpl@4c1f4106
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-0-#24", id=35, state=RUNNABLE, blockCnt=2, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@791dd2e8
+        - locked java.util.Collections$UnmodifiableSet@4fda19ce
+        - locked sun.nio.ch.EPollSelectorImpl@ffba114
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="nio-acceptor-tcp-comm-#28", id=42, state=RUNNABLE, blockCnt=1, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked sun.nio.ch.Util$3@395ad69c
+        - locked java.util.Collections$UnmodifiableSet@2ec7c9cd
+        - locked sun.nio.ch.EPollSelectorImpl@314cb1b2
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.accept(GridNioServer.java:2926)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.body(GridNioServer.java:2874)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-timeout-worker-#23", id=34, state=TIMED_WAITING, blockCnt=3, waitCnt=10253]
+    Lock [object=java.lang.Object@63ed558e, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at o.a.i.i.processors.timeout.GridTimeoutProcessor$TimeoutWorker.body(GridTimeoutProcessor.java:269)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="ignite-clock", id=33, state=TIMED_WAITING, blockCnt=0, waitCnt=131886]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.util.IgniteUtils$22.run(IgniteUtils.java:3383)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="jvm-pause-detector-worker", id=26, state=TIMED_WAITING, blockCnt=0, waitCnt=26600]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.LongJVMPauseDetector$1.run(LongJVMPauseDetector.java:100)
+
+Thread [name="data-streamer-stripe-7-#16", id=25, state=WAITING, blockCnt=6, waitCnt=107]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-6-#15", id=24, state=WAITING, blockCnt=6, waitCnt=110]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-5-#14", id=23, state=WAITING, blockCnt=12, waitCnt=114]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-4-#13", id=22, state=WAITING, blockCnt=0, waitCnt=55]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-3-#12", id=21, state=WAITING, blockCnt=6, waitCnt=140]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-2-#11", id=20, state=WAITING, blockCnt=9, waitCnt=130]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-1-#10", id=19, state=WAITING, blockCnt=4, waitCnt=130]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-0-#9", id=18, state=WAITING, blockCnt=7, waitCnt=157]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-7-#8", id=17, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-6-#7", id=16, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-5-#6", id=15, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-4-#5", id=14, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-3-#4", id=13, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-2-#3", id=12, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-1-#2", id=11, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-0-#1", id=10, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="Signal Dispatcher", id=4, state=RUNNABLE, blockCnt=0, waitCnt=0]
+
+Thread [name="Finalizer", id=3, state=WAITING, blockCnt=98, waitCnt=53]
+    Lock [object=java.lang.ref.ReferenceQueue$Lock@cec9159, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+        at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+Thread [name="Reference Handler", id=2, state=WAITING, blockCnt=49, waitCnt=49]
+    Lock [object=java.lang.ref.Reference$Lock@1c75b8a8, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.lang.Object.wait(Object.java:502)
+        at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+        at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+Thread [name="main", id=1, state=RUNNABLE, blockCnt=1, waitCnt=25]
+        at sun.misc.Unsafe.getObjectVolatile(Native Method)
+        at java.util.concurrent.atomic.AtomicReferenceArray.getRaw(AtomicReferenceArray.java:130)
+        at java.util.concurrent.atomic.AtomicReferenceArray.get(AtomicReferenceArray.java:125)
+        at o.a.i.i.processors.cache.distributed.dht.topology.GridDhtPartitionTopologyImpl.localPartition0(GridDhtPartitionTopologyImpl.java:911)
+        at o.a.i.i.processors.cache.distributed.dht.topology.GridDhtPartitionTopologyImpl.localPartition(GridDhtPartitionTopologyImpl.java:825)
+        at o.a.i.i.processors.cache.GridCacheContext.releaseForFastLocalGet(GridCacheContext.java:2103)
+        at o.a.i.i.processors.cache.distributed.dht.GridPartitionedSingleGetFuture.mapKeyToNode(GridPartitionedSingleGetFuture.java:358)
+        at o.a.i.i.processors.cache.distributed.dht.GridPartitionedSingleGetFuture.map(GridPartitionedSingleGetFuture.java:225)
+        at o.a.i.i.processors.cache.distributed.dht.GridPartitionedSingleGetFuture.init(GridPartitionedSingleGetFuture.java:217)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.getAsync0(GridDhtAtomicCache.java:1428)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.access$1600(GridDhtAtomicCache.java:135)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache$16.apply(GridDhtAtomicCache.java:474)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache$16.apply(GridDhtAtomicCache.java:472)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.asyncOp(GridDhtAtomicCache.java:761)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.getAsync(GridDhtAtomicCache.java:472)
+        at o.a.i.i.processors.cache.GridCacheAdapter.get0(GridCacheAdapter.java:4716)
+        at o.a.i.i.processors.cache.GridCacheAdapter.get(GridCacheAdapter.java:4697)
+        at o.a.i.i.processors.cache.GridCacheAdapter.get(GridCacheAdapter.java:1415)
+        at o.a.i.i.processors.cache.IgniteCacheProxyImpl.get(IgniteCacheProxyImpl.java:928)
+        at o.a.i.i.processors.cache.GatewayProtectedCacheProxy.get(GatewayProtectedCacheProxy.java:640)
+        at TransE$.calc_sum(TransE.scala:272)
+        at TransE$$anonfun$test$1$$anonfun$apply$mcVI$sp$11.apply(TransE.scala:451)
+        at TransE$$anonfun$test$1$$anonfun$apply$mcVI$sp$11.apply(TransE.scala:450)
+        at scala.collection.immutable.Range.foreach(Range.scala:160)
+        at TransE$$anonfun$test$1.apply$mcVI$sp(TransE.scala:450)
+        at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:160)
+        at TransE$.test(TransE.scala:437)
+        at TransE$$anonfun$1.apply$mcV$sp(TransE.scala:102)
+        at TransE$$anonfun$1.apply(TransE.scala:59)
+        at TransE$$anonfun$1.apply(TransE.scala:59)
+        at o.a.i.s.scalar$.init0(scalar.scala:181)
+        at o.a.i.s.scalar$.apply(scalar.scala:237)
+        at TransE$.delayedEndpoint$TransE$1(TransE.scala:59)
+        at TransE$delayedInit$body.apply(TransE.scala:28)
+        at scala.Function0$class.apply$mcV$sp(Function0.scala:34)
+        at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
+        at scala.App$$anonfun$main$1.apply(App.scala:76)
+        at scala.App$$anonfun$main$1.apply(App.scala:76)
+        at scala.collection.immutable.List.foreach(List.scala:392)
+        at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:35)
+        at scala.App$class.main(App.scala:76)
+        at TransE$.main(TransE.scala:28)
+        at TransE.main(TransE.scala)
+
+
+
+[11:21:13,759][SEVERE][tcp-disco-ip-finder-cleaner-#5][TcpDiscoveryMulticastIpFinder] Failed to request nodes addresses.
+java.net.SocketException: Cannot assign requested address (Error setting socket option)
+	at java.net.PlainDatagramSocketImpl.socketSetOption0(Native Method)
+	at java.net.PlainDatagramSocketImpl.socketSetOption(PlainDatagramSocketImpl.java:74)
+	at java.net.AbstractPlainDatagramSocketImpl.setOption(AbstractPlainDatagramSocketImpl.java:309)
+	at java.net.MulticastSocket.setInterface(MulticastSocket.java:471)
+	at org.apache.ignite.spi.discovery.tcp.ipfinder.multicast.TcpDiscoveryMulticastIpFinder.requestAddresses(TcpDiscoveryMulticastIpFinder.java:565)
+	at org.apache.ignite.spi.discovery.tcp.ipfinder.multicast.TcpDiscoveryMulticastIpFinder.getRegisteredAddresses(TcpDiscoveryMulticastIpFinder.java:454)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.registeredAddresses(TcpDiscoverySpi.java:1900)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl$IpFinderCleaner.cleanIpFinder(ServerImpl.java:1998)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl$IpFinderCleaner.body(ServerImpl.java:1973)
+	at org.apache.ignite.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+[11:21:13,959][SEVERE][tcp-disco-ip-finder-cleaner-#5][TcpDiscoveryMulticastIpFinder] Failed to request nodes addresses.
+java.net.SocketException: Cannot assign requested address (Error setting socket option)
+	at java.net.PlainDatagramSocketImpl.socketSetOption0(Native Method)
+	at java.net.PlainDatagramSocketImpl.socketSetOption(PlainDatagramSocketImpl.java:74)
+	at java.net.AbstractPlainDatagramSocketImpl.setOption(AbstractPlainDatagramSocketImpl.java:309)
+	at java.net.MulticastSocket.setInterface(MulticastSocket.java:471)
+	at org.apache.ignite.spi.discovery.tcp.ipfinder.multicast.TcpDiscoveryMulticastIpFinder.requestAddresses(TcpDiscoveryMulticastIpFinder.java:565)
+	at org.apache.ignite.spi.discovery.tcp.ipfinder.multicast.TcpDiscoveryMulticastIpFinder.getRegisteredAddresses(TcpDiscoveryMulticastIpFinder.java:454)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.registeredAddresses(TcpDiscoverySpi.java:1900)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl$IpFinderCleaner.cleanIpFinder(ServerImpl.java:1998)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl$IpFinderCleaner.body(ServerImpl.java:1973)
+	at org.apache.ignite.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+[11:22:00,485][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=7ebfd166, uptime=01:09:54.254]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=24.5%, avg=25.63%, GC=0.2%]
+    ^-- PageMemory [pages=21138]
+    ^-- Heap [used=370MB, free=89.51%, comm=1001MB]
+    ^-- Off-heap [used=83MB, free=97.54%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=82MB, free=97.41%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=5, qSize=0]
+[11:22:00,485][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=5815, reusePages=0]
+[11:22:08,097][INFO][Thread-2][G] Invoking shutdown hook...

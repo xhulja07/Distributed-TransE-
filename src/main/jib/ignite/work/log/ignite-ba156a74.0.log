@@ -1,0 +1,421 @@
+[13:23:17,093][WARNING][main][G] Ignite work directory is not provided, automatically resolved to: /home/xshaini/apache-ignite-2.7.5-bin/work
+[13:23:17,280][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.7.6#20190911-sha1:21f7ca41
+>>> 2019 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[13:23:17,289][INFO][main][IgniteKernal] Config URL: file:/home/xshaini/apache-ignite-2.7.5-bin/examples/config/example-ignite.xml
+[13:23:17,308][INFO][main][IgniteKernal] IgniteConfiguration [igniteInstanceName=null, pubPoolSize=8, svcPoolSize=8, callbackPoolSize=8, stripedPoolSize=8, sysPoolSize=8, mgmtPoolSize=4, igfsPoolSize=4, dataStreamerPoolSize=8, utilityCachePoolSize=8, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=8, igniteHome=/home/xshaini/apache-ignite-2.7.5-bin, igniteWorkDir=/home/xshaini/apache-ignite-2.7.5-bin/work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@78dd667e, nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, marsh=BinaryMarshaller [], marshLocJobs=false, daemon=false, p2pEnabled=true, netTimeout=5000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$FirstConnectionPolicy@385c9627, enableForcibleNodeKill=false, enableTroubleshootingLog=false, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=4, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@139982de[Count = 1], stopping=false], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@682b2fa, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@662ac478, addrRslvr=null, encryptionSpi=org.apache.ignite.spi.encryption.noop.NoopEncryptionSpi@6743e411, clientMode=false, rebalanceThreadPoolSize=1, txCfg=TransactionConfiguration [txSerEnabled=false, dfltIsolation=REPEATABLE_READ, dfltConcurrency=PESSIMISTIC, dfltTxTimeout=0, txTimeoutOnPartitionMapExchange=0, pessimisticTxLogSize=0, pessimisticTxLogLinger=10000, tmLookupClsName=null, txManagerFactory=null, useJtaSync=false], cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, sysWorkerBlockedTimeout=null, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=ConnectorConfiguration [jettyPath=null, host=null, port=11211, noDelay=true, directBuf=false, sndBufSize=32768, rcvBufSize=32768, idleQryCurTimeout=600000, idleQryCurCheckFreq=60000, sndQueueLimit=0, selectorCnt=4, idleTimeout=7000, sslEnabled=false, sslClientAuth=false, sslCtxFactory=null, sslFactory=null, portRange=100, threadPoolSize=8, msgInterceptor=null], odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=DataStorageConfiguration [sysRegionInitSize=41943040, sysRegionMaxSize=104857600, pageSize=0, concLvl=0, dfltDataRegConf=DataRegionConfiguration [name=default, maxSize=3334422528, initSize=268435456, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=false, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=false, checkpointPageBufSize=0], dataRegions=null, storagePath=null, checkpointFreq=180000, lockWaitTime=10000, checkpointThreads=4, checkpointWriteOrder=SEQUENTIAL, walHistSize=20, maxWalArchiveSize=1073741824, walSegments=10, walSegmentSize=67108864, walPath=db/wal, walArchivePath=db/wal/archive, metricsEnabled=false, walMode=LOG_ONLY, walTlbSize=131072, walBuffSize=0, walFlushFreq=2000, walFsyncDelay=1000, walRecordIterBuffSize=67108864, alwaysWriteFullPages=false, fileIOFactory=org.apache.ignite.internal.processors.cache.persistence.file.AsyncFileIOFactory@9d5509a, metricsSubIntervalCnt=5, metricsRateTimeInterval=60000, walAutoArchiveAfterInactivity=-1, writeThrottlingEnabled=false, walCompactionEnabled=false, walCompactionLevel=1, checkpointReadLockTimeout=null], activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=8, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], mvccVacuumThreadCnt=2, mvccVacuumFreq=5000, authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[13:23:17,309][INFO][main][IgniteKernal] Daemon mode: off
+[13:23:17,309][INFO][main][IgniteKernal] OS: Linux 4.15.0-88-generic amd64
+[13:23:17,309][INFO][main][IgniteKernal] OS user: xshaini
+[13:23:17,310][INFO][main][IgniteKernal] PID: 28115
+[13:23:17,311][INFO][main][IgniteKernal] Language runtime: Scala ver. 2.11.11
+[13:23:17,311][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_211-b12 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.211-b12
+[13:23:17,312][INFO][main][IgniteKernal] VM total memory: 3.5GB
+[13:23:17,312][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[13:23:17,312][INFO][main][IgniteKernal] Logger: JavaLogger [quiet=true, config=null]
+[13:23:17,312][INFO][main][IgniteKernal] IGNITE_HOME=/home/xshaini/apache-ignite-2.7.5-bin
+[13:23:17,312][INFO][main][IgniteKernal] VM arguments: [-Dfile.encoding=UTF-8, -Xbootclasspath/p:/home/xshaini/scala-SDK-4.7.0/eclipse/plugins/org.scala-ide.scala211.jars_4.7.0.201709291351/target/jars/scala-library.jar:/home/xshaini/scala-SDK-4.7.0/eclipse/plugins/org.scala-ide.scala211.jars_4.7.0.201709291351/target/jars/scala-reflect.jar]
+[13:23:17,313][INFO][main][IgniteKernal] System cache's DataRegion size is configured to 40 MB. Use DataStorageConfiguration.systemRegionInitialSize property to change the setting.
+[13:23:17,319][INFO][main][IgniteKernal] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[13:23:17,319][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[13:23:17,320][WARNING][main][IgniteKernal] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[13:23:17,323][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /home/xshaini/apache-ignite-2.7.5-bin/libs/licenses
+[13:23:17,324][WARNING][pub-#22][GridDiagnostic] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[13:23:17,389][INFO][main][IgnitePluginProcessor] Configured plugins:
+[13:23:17,390][INFO][main][IgnitePluginProcessor]   ^-- None
+[13:23:17,390][INFO][main][IgnitePluginProcessor] 
+[13:23:17,393][INFO][main][FailureProcessor] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=[SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[13:23:17,446][INFO][main][TcpCommunicationSpi] Successfully bound communication NIO server to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0, selectorsCnt=4, selectorSpins=0, pairedConn=false]
+[13:23:17,452][WARNING][main][TcpCommunicationSpi] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[13:23:17,470][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[13:23:17,498][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[13:23:17,507][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[13:23:17,822][WARNING][main][IgniteCacheDatabaseSharedManager] DataRegionConfiguration.maxWalArchiveSize instead DataRegionConfiguration.walHistorySize would be used for removing old archive wal files
+[13:23:17,849][INFO][main][PartitionsEvictManager] Evict partition permits=2
+[13:23:18,139][INFO][main][ClientListenerProcessor] Client connector processor has started on TCP port 10800
+[13:23:18,209][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11211]
+[13:23:18,258][INFO][main][IgniteKernal] Non-loopback local IPs: 172.168.1.60, fe80:0:0:0:c537:4cc4:a945:74b5%wlp2s0
+[13:23:18,258][INFO][main][IgniteKernal] Enabled local MACs: 1002B5D9B0B6
+[13:23:18,318][INFO][main][TcpDiscoverySpi] Connection check threshold is calculated: 10000
+[13:23:18,321][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47500, localHost=0.0.0.0/0.0.0.0, locNodeId=ba156a74-ba34-429d-ae37-9b1b3d277870]
+[13:23:19,578][INFO][disco-notifier-worker-#41][MvccProcessorImpl] Assigned mvcc coordinator [crd=MvccCoordinator [nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, crdVer=1583324599572, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], crdNode=TcpDiscoveryNode [id=ba156a74-ba34-429d-ae37-9b1b3d277870, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583324598315, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false]]
+[13:23:19,618][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], mvccCrd=MvccCoordinator [nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, crdVer=1583324599572, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=true, crd=true, evt=NODE_JOINED, evtNode=ba156a74-ba34-429d-ae37-9b1b3d277870, customEvt=null, allowMerge=false]
+[13:23:19,646][INFO][exchange-worker-#43][msg] Components activation performed in 23 ms.
+[13:23:19,780][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=ignite-sys-cache, id=-2100569601, memoryPolicyName=sysMemPlc, mode=REPLICATED, atomicity=TRANSACTIONAL, backups=2147483647, mvcc=false], encryptionEnabled=false]
+[13:23:19,781][INFO][exchange-worker-#43][GridCacheProcessor] Starting caches on local join performed in 135 ms.
+[13:23:19,793][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Skipped waiting for partitions release future (local node is joining) [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]]
+[13:23:19,861][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]]
+[13:23:19,862][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[13:23:19,869][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 7 ms.
+[13:23:19,869][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 0 ms.
+[13:23:19,889][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 19 ms.
+[13:23:19,890][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[13:23:19,890][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], err=null]
+[13:23:19,891][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Detecting lost partitions performed in 1 ms.
+[13:23:19,892][INFO][exchange-worker-#43][MvccProcessorImpl] Initialize local node as mvcc coordinator [node=ba156a74-ba34-429d-ae37-9b1b3d277870, crdVer=1583324599572]
+[13:23:19,904][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=ignite-sys-cache, localNodeId=ba156a74-ba34-429d-ae37-9b1b3d277870
+[13:23:19,907][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=ba156a74-ba34-429d-ae37-9b1b3d277870, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], evt=NODE_JOINED, evtNode=TcpDiscoveryNode [id=ba156a74-ba34-429d-ae37-9b1b3d277870, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583324598315, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], durationFromInit=293]
+[13:23:19,907][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], crd=true]
+[13:23:19,913][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=0], force=false, evt=NODE_JOINED, node=ba156a74-ba34-429d-ae37-9b1b3d277870]
+[13:23:20,016][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[13:23:20,016][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[13:23:20,016][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[13:23:20,017][INFO][main][IgniteKernal]   ^-- Enable G1 Garbage Collector (add '-XX:+UseG1GC' to JVM options)
+[13:23:20,017][INFO][main][IgniteKernal]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[13:23:20,017][INFO][main][IgniteKernal]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[13:23:20,018][INFO][main][IgniteKernal]   ^-- Disable processing of calls to System.gc() (add '-XX:+DisableExplicitGC' to JVM options)
+[13:23:20,018][INFO][main][IgniteKernal] Refer to this page for more performance suggestions: https://apacheignite.readme.io/docs/jvm-and-system-tuning
+[13:23:20,018][INFO][main][IgniteKernal] 
+[13:23:20,018][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[13:23:20,024][INFO][main][IgniteKernal] Data Regions Configured:
+[13:23:20,025][INFO][main][IgniteKernal]   ^-- default [initSize=256.0 MiB, maxSize=3.1 GiB, persistence=false]
+[13:23:20,027][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 2.7.6#20190911-sha1:21f7ca41c4348909e2fd26ccf59b5b2ce1f4474e
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 4.15.0-88-generic amd64
+>>> CPU(s): 4
+>>> Heap: 3.5GB
+>>> VM name: 28115@eis-seoul
+>>> Local node [ID=BA156A74-BA34-429D-AE37-9B1B3D277870, order=1, clientMode=false]
+>>> Local node addresses: [172.168.1.60/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /172.168.1.60]
+>>> Local ports: TCP:10800 TCP:11211 TCP:47100 UDP:47400 TCP:47500 
+
+[13:23:20,037][INFO][main][GridDiscoveryManager] Topology snapshot [ver=1, locNode=ba156a74, servers=1, clients=0, state=ACTIVE, CPUs=4, offheap=3.1GB, heap=3.5GB]
+[13:23:20,106][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], mvccCrd=MvccCoordinator [nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, crdVer=1583324599572, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=ba156a74-ba34-429d-ae37-9b1b3d277870, customEvt=DynamicCacheChangeBatch [id=0b80085a071-545516e5-c4a8-4fac-8fea-ce272748e85e, reqs=[DynamicCacheChangeRequest [cacheName=Entity2IDcachee, hasCfg=true, nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[Entity2IDcachee], stopCaches=null, startGrps=[Entity2IDcachee], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[13:23:20,108][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 1 ms.
+[13:23:20,314][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=Entity2IDcachee, id=-1087112307, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[13:23:20,317][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 209 ms.
+[13:23:20,322][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 2 ms.
+[13:23:20,332][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[13:23:20,337][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]]
+[13:23:20,338][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[13:23:20,493][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]
+[13:23:20,493][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[13:23:20,496][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 3 ms.
+[13:23:20,498][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 2 ms.
+[13:23:20,522][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 20 ms.
+[13:23:20,522][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[13:23:20,522][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], err=null]
+[13:23:20,528][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=Entity2IDcachee, localNodeId=ba156a74-ba34-429d-ae37-9b1b3d277870
+[13:23:20,529][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=ba156a74-ba34-429d-ae37-9b1b3d277870, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=ba156a74-ba34-429d-ae37-9b1b3d277870, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583324598315, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], durationFromInit=431]
+[13:23:20,529][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], crd=true]
+[13:23:20,536][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=1], force=false, evt=DISCOVERY_CUSTOM_EVT, node=ba156a74-ba34-429d-ae37-9b1b3d277870]
+[13:23:20,546][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], mvccCrd=MvccCoordinator [nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, crdVer=1583324599572, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=ba156a74-ba34-429d-ae37-9b1b3d277870, customEvt=DynamicCacheChangeBatch [id=7b80085a071-545516e5-c4a8-4fac-8fea-ce272748e85e, reqs=[DynamicCacheChangeRequest [cacheName=Relation2IDcachee, hasCfg=true, nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[Relation2IDcachee], stopCaches=null, startGrps=[Relation2IDcachee], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[13:23:20,546][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 0 ms.
+[13:23:20,560][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=Relation2IDcachee, id=1689532820, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[13:23:20,561][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 14 ms.
+[13:23:20,563][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 2 ms.
+[13:23:20,565][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[13:23:20,566][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2]]]
+[13:23:20,566][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[13:23:20,646][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=2]]
+[13:23:20,647][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[13:23:20,650][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 3 ms.
+[13:23:20,652][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 2 ms.
+[13:23:20,664][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 8 ms.
+[13:23:20,664][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[13:23:20,665][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], err=null]
+[13:23:20,670][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=Relation2IDcachee, localNodeId=ba156a74-ba34-429d-ae37-9b1b3d277870
+[13:23:20,681][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=ba156a74-ba34-429d-ae37-9b1b3d277870, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=ba156a74-ba34-429d-ae37-9b1b3d277870, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583324598315, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], durationFromInit=142]
+[13:23:20,682][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], crd=true]
+[13:23:20,692][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=2], force=false, evt=DISCOVERY_CUSTOM_EVT, node=ba156a74-ba34-429d-ae37-9b1b3d277870]
+[13:23:20,696][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], mvccCrd=MvccCoordinator [nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, crdVer=1583324599572, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=ba156a74-ba34-429d-ae37-9b1b3d277870, customEvt=DynamicCacheChangeBatch [id=db80085a071-545516e5-c4a8-4fac-8fea-ce272748e85e, reqs=[DynamicCacheChangeRequest [cacheName=E_embeddingscachee, hasCfg=true, nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[E_embeddingscachee], stopCaches=null, startGrps=[E_embeddingscachee], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[13:23:20,696][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 0 ms.
+[13:23:20,753][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=E_embeddingscachee, id=195644633, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[13:23:20,753][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 57 ms.
+[13:23:20,754][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 1 ms.
+[13:23:20,755][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[13:23:20,756][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3]]]
+[13:23:20,756][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[13:23:20,836][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=3]]
+[13:23:20,836][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[13:23:20,839][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 3 ms.
+[13:23:20,842][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 3 ms.
+[13:23:20,852][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 7 ms.
+[13:23:20,853][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[13:23:20,853][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], err=null]
+[13:23:20,862][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=E_embeddingscachee, localNodeId=ba156a74-ba34-429d-ae37-9b1b3d277870
+[13:23:20,863][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=ba156a74-ba34-429d-ae37-9b1b3d277870, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=ba156a74-ba34-429d-ae37-9b1b3d277870, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583324598315, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], durationFromInit=165]
+[13:23:20,864][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=3], crd=true]
+[13:23:20,871][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (obsolete exchange ID) [top=AffinityTopologyVersion [topVer=1, minorTopVer=3], evt=DISCOVERY_CUSTOM_EVT, node=ba156a74-ba34-429d-ae37-9b1b3d277870]
+[13:23:20,871][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], mvccCrd=MvccCoordinator [nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, crdVer=1583324599572, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=ba156a74-ba34-429d-ae37-9b1b3d277870, customEvt=DynamicCacheChangeBatch [id=3c80085a071-545516e5-c4a8-4fac-8fea-ce272748e85e, reqs=[DynamicCacheChangeRequest [cacheName=R_embeddingscachee, hasCfg=true, nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[R_embeddingscachee], stopCaches=null, startGrps=[R_embeddingscachee], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[13:23:20,872][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 1 ms.
+[13:23:20,884][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=R_embeddingscachee, id=118605932, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[13:23:20,886][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 13 ms.
+[13:23:20,890][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 2 ms.
+[13:23:20,892][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[13:23:20,892][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4]]]
+[13:23:20,893][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[13:23:20,977][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=4]]
+[13:23:20,978][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[13:23:20,983][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 5 ms.
+[13:23:20,986][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 3 ms.
+[13:23:21,002][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 11 ms.
+[13:23:21,002][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[13:23:21,002][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], err=null]
+[13:23:21,014][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=R_embeddingscachee, localNodeId=ba156a74-ba34-429d-ae37-9b1b3d277870
+[13:23:21,021][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=ba156a74-ba34-429d-ae37-9b1b3d277870, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=ba156a74-ba34-429d-ae37-9b1b3d277870, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583324598315, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], durationFromInit=151]
+[13:23:21,021][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=4], crd=true]
+[13:23:21,027][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (obsolete exchange ID) [top=AffinityTopologyVersion [topVer=1, minorTopVer=4], evt=DISCOVERY_CUSTOM_EVT, node=ba156a74-ba34-429d-ae37-9b1b3d277870]
+[13:23:21,027][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], mvccCrd=MvccCoordinator [nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, crdVer=1583324599572, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=ba156a74-ba34-429d-ae37-9b1b3d277870, customEvt=DynamicCacheChangeBatch [id=9c80085a071-545516e5-c4a8-4fac-8fea-ce272748e85e, reqs=[DynamicCacheChangeRequest [cacheName=tripleIde, hasCfg=true, nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[tripleIde], stopCaches=null, startGrps=[tripleIde], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[13:23:21,027][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 0 ms.
+[13:23:21,041][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=tripleIde, id=-386511508, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[13:23:21,041][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 14 ms.
+[13:23:21,043][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 1 ms.
+[13:23:21,044][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[13:23:21,044][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5]]]
+[13:23:21,044][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[13:23:21,116][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=5]]
+[13:23:21,116][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[13:23:21,120][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 3 ms.
+[13:23:21,124][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 4 ms.
+[13:23:21,136][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 9 ms.
+[13:23:21,136][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[13:23:21,136][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], err=null]
+[13:23:21,148][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=tripleIde, localNodeId=ba156a74-ba34-429d-ae37-9b1b3d277870
+[13:23:21,148][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=ba156a74-ba34-429d-ae37-9b1b3d277870, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=ba156a74-ba34-429d-ae37-9b1b3d277870, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583324598315, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], durationFromInit=121]
+[13:23:21,148][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=5], crd=true]
+[13:23:21,155][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (obsolete exchange ID) [top=AffinityTopologyVersion [topVer=1, minorTopVer=5], evt=DISCOVERY_CUSTOM_EVT, node=ba156a74-ba34-429d-ae37-9b1b3d277870]
+[13:23:21,156][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], mvccCrd=MvccCoordinator [nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, crdVer=1583324599572, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=ba156a74-ba34-429d-ae37-9b1b3d277870, customEvt=DynamicCacheChangeBatch [id=fc80085a071-545516e5-c4a8-4fac-8fea-ce272748e85e, reqs=[DynamicCacheChangeRequest [cacheName=tripleHcachee, hasCfg=true, nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[tripleHcachee], stopCaches=null, startGrps=[tripleHcachee], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[13:23:21,156][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 0 ms.
+[13:23:21,164][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=tripleHcachee, id=-1974150835, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[13:23:21,164][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 8 ms.
+[13:23:21,165][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 1 ms.
+[13:23:21,167][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], waitTime=11ms, futInfo=NA, mode=DISTRIBUTED]
+[13:23:21,167][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6]]]
+[13:23:21,168][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[13:23:21,228][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=6]]
+[13:23:21,228][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[13:23:21,233][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 5 ms.
+[13:23:21,237][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 3 ms.
+[13:23:21,251][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 9 ms.
+[13:23:21,251][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[13:23:21,251][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], err=null]
+[13:23:21,262][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=tripleHcachee, localNodeId=ba156a74-ba34-429d-ae37-9b1b3d277870
+[13:23:21,263][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=ba156a74-ba34-429d-ae37-9b1b3d277870, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=ba156a74-ba34-429d-ae37-9b1b3d277870, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583324598315, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], durationFromInit=113]
+[13:23:21,263][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=6], crd=true]
+[13:23:21,270][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (obsolete exchange ID) [top=AffinityTopologyVersion [topVer=1, minorTopVer=6], evt=DISCOVERY_CUSTOM_EVT, node=ba156a74-ba34-429d-ae37-9b1b3d277870]
+[13:23:21,271][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], mvccCrd=MvccCoordinator [nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, crdVer=1583324599572, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=ba156a74-ba34-429d-ae37-9b1b3d277870, customEvt=DynamicCacheChangeBatch [id=5d80085a071-545516e5-c4a8-4fac-8fea-ce272748e85e, reqs=[DynamicCacheChangeRequest [cacheName=allTriplesCache, hasCfg=true, nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[allTriplesCache], stopCaches=null, startGrps=[allTriplesCache], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[13:23:21,271][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 0 ms.
+[13:23:21,276][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=allTriplesCache, id=1394360558, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[13:23:21,276][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 5 ms.
+[13:23:21,277][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 1 ms.
+[13:23:21,278][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[13:23:21,279][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7]]]
+[13:23:21,279][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[13:23:21,331][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=7]]
+[13:23:21,331][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[13:23:21,336][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 5 ms.
+[13:23:21,341][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 5 ms.
+[13:23:21,355][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 9 ms.
+[13:23:21,355][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[13:23:21,356][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], err=null]
+[13:23:21,368][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=allTriplesCache, localNodeId=ba156a74-ba34-429d-ae37-9b1b3d277870
+[13:23:21,369][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=ba156a74-ba34-429d-ae37-9b1b3d277870, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=ba156a74-ba34-429d-ae37-9b1b3d277870, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583324598315, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], durationFromInit=90]
+[13:23:21,369][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=7], crd=true]
+[13:23:21,376][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (obsolete exchange ID) [top=AffinityTopologyVersion [topVer=1, minorTopVer=7], evt=DISCOVERY_CUSTOM_EVT, node=ba156a74-ba34-429d-ae37-9b1b3d277870]
+[13:23:21,376][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=8], mvccCrd=MvccCoordinator [nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, crdVer=1583324599572, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=ba156a74-ba34-429d-ae37-9b1b3d277870, customEvt=DynamicCacheChangeBatch [id=bd80085a071-545516e5-c4a8-4fac-8fea-ce272748e85e, reqs=[DynamicCacheChangeRequest [cacheName=testTriplecachee, hasCfg=true, nodeId=ba156a74-ba34-429d-ae37-9b1b3d277870, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[testTriplecachee], stopCaches=null, startGrps=[testTriplecachee], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[13:23:21,377][INFO][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 1 ms.
+[13:23:21,382][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=testTriplecachee, id=2015714483, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[13:23:21,383][INFO][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 6 ms.
+[13:23:21,384][INFO][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 1 ms.
+[13:23:21,385][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=8], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[13:23:21,385][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=8]]]
+[13:23:21,386][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=8], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[13:23:21,434][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=8], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=8]]
+[13:23:21,434][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[13:23:21,441][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 7 ms.
+[13:23:21,445][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 4 ms.
+[13:23:21,461][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 11 ms.
+[13:23:21,461][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[13:23:21,461][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=8], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=8], err=null]
+[13:23:21,472][INFO][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=testTriplecachee, localNodeId=ba156a74-ba34-429d-ae37-9b1b3d277870
+[13:23:21,473][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=ba156a74-ba34-429d-ae37-9b1b3d277870, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=8], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=ba156a74-ba34-429d-ae37-9b1b3d277870, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1583324598315, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=8], durationFromInit=100]
+[13:23:21,473][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=8], crd=true]
+[13:23:21,485][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=8], force=false, evt=DISCOVERY_CUSTOM_EVT, node=ba156a74-ba34-429d-ae37-9b1b3d277870]
+[13:23:21,553][WARNING][main][DataStreamerImpl] Data streamer will not overwrite existing cache entries for better performance (to change, set allowOverwrite to true)
+[13:23:23,567][WARNING][main][GridQueryProcessor] Key-value pair is not inserted into any SQL table [cacheName=E_embeddingscachee, valType=breeze.linalg.DenseVector$SerializedForm]
+[13:23:23,567][WARNING][main][GridQueryProcessor]   ^-- Value type(s) are specified via CacheConfiguration.indexedTypes or CacheConfiguration.queryEntities
+[13:23:23,567][WARNING][main][GridQueryProcessor]   ^-- Make sure that same type(s) used when adding Object or BinaryObject to cache
+[13:23:23,567][WARNING][main][GridQueryProcessor]   ^-- Otherwise, entries will be stored in cache, but not appear as SQL Table rows
+[13:23:29,667][WARNING][data-streamer-stripe-3-#12][GridQueryProcessor] Key-value pair is not inserted into any SQL table [cacheName=tripleIde, valType=TripleID]
+[13:23:29,789][WARNING][data-streamer-stripe-7-#16][H2TreeIndex] <allTriplesCache> Indexed columns of a row cannot be fully inlined into index what may lead to slowdown due to additional data page reads, increase index inline size if needed (set system property IGNITE_MAX_INDEX_PAYLOAD_SIZE with recommended size (be aware it will be used by default for all indexes without explicit inline size)) [cacheName=INTEGER, tableName=allTriplesCache, idxName=_key_PK, idxCols=(_KEY), idxType=PRIMARY KEY, curSize=10, recommendedInlineSize=54]
+[13:23:29,798][WARNING][data-streamer-stripe-7-#16][H2TreeIndex] <allTriplesCache> Indexed columns of a row cannot be fully inlined into index what may lead to slowdown due to additional data page reads, increase index inline size if needed (use INLINE_SIZE option for CREATE INDEX command, QuerySqlField.inlineSize for annotated classes, or QueryIndex.inlineSize for explicit QueryEntity configuration) [cacheName=INTEGER, tableName=allTriplesCache, idxName=INTEGER__VAL_IDX, idxCols=(_VAL, _KEY), idxType=SECONDARY, curSize=10, recommendedInlineSize=59]
+[13:23:36,997][WARNING][main][BLAS] Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+[13:23:36,997][WARNING][main][BLAS] Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+[13:24:20,013][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=ba156a74, uptime=00:01:00.001]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.33%, avg=33.46%, GC=0.07%]
+    ^-- PageMemory [pages=35414]
+    ^-- Heap [used=731MB, free=79.31%, comm=1497MB]
+    ^-- Off-heap [used=139MB, free=95.88%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=138MB, free=95.65%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=8, qSize=0]
+[13:24:20,014][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=15863, reusePages=16]
+[13:25:20,016][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=ba156a74, uptime=00:02:00.006]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.17%, avg=29.06%, GC=0.13%]
+    ^-- PageMemory [pages=35415]
+    ^-- Heap [used=379MB, free=89.27%, comm=552MB]
+    ^-- Off-heap [used=139MB, free=95.88%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=138MB, free=95.65%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:25:20,016][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=15863, reusePages=12]
+[13:26:20,015][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=ba156a74, uptime=00:03:00.009]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.43%, avg=27.9%, GC=0.17%]
+    ^-- PageMemory [pages=35419]
+    ^-- Heap [used=279MB, free=92.1%, comm=476MB]
+    ^-- Off-heap [used=139MB, free=95.88%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=138MB, free=95.65%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:26:20,015][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=15863, reusePages=18]
+[13:27:20,023][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=ba156a74, uptime=00:04:00.013]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.33%, avg=27.25%, GC=0.2%]
+    ^-- PageMemory [pages=35419]
+    ^-- Heap [used=154MB, free=95.63%, comm=472MB]
+    ^-- Off-heap [used=139MB, free=95.88%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=138MB, free=95.65%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=5, qSize=0]
+[13:27:20,024][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=15863, reusePages=21]
+[13:28:20,028][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=ba156a74, uptime=00:05:00.022]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.57%, avg=26.88%, GC=0.23%]
+    ^-- PageMemory [pages=35419]
+    ^-- Heap [used=89MB, free=97.46%, comm=451MB]
+    ^-- Off-heap [used=139MB, free=95.88%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=138MB, free=95.65%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:28:20,029][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=15863, reusePages=14]
+[13:29:20,037][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=ba156a74, uptime=00:06:00.026]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.33%, avg=26.66%, GC=0.23%]
+    ^-- PageMemory [pages=35419]
+    ^-- Heap [used=271MB, free=92.32%, comm=407MB]
+    ^-- Off-heap [used=139MB, free=95.88%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=138MB, free=95.65%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:29:20,037][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=15862, reusePages=18]
+[13:30:20,040][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=ba156a74, uptime=00:07:00.032]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.5%, avg=26.5%, GC=0.2%]
+    ^-- PageMemory [pages=35422]
+    ^-- Heap [used=164MB, free=95.34%, comm=426MB]
+    ^-- Off-heap [used=139MB, free=95.88%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=138MB, free=95.65%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:30:20,040][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=15863, reusePages=16]
+[13:31:20,039][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=ba156a74, uptime=00:08:00.033]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.5%, avg=26.38%, GC=0.23%]
+    ^-- PageMemory [pages=35422]
+    ^-- Heap [used=109MB, free=96.91%, comm=402MB]
+    ^-- Off-heap [used=139MB, free=95.88%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=138MB, free=95.65%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:31:20,039][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=15864, reusePages=15]
+[13:32:20,048][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=ba156a74, uptime=00:09:00.034]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.4%, avg=26.28%, GC=0.2%]
+    ^-- PageMemory [pages=35422]
+    ^-- Heap [used=132MB, free=96.26%, comm=447MB]
+    ^-- Off-heap [used=139MB, free=95.88%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=138MB, free=95.65%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:32:20,048][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=15863, reusePages=14]
+[13:33:20,050][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=ba156a74, uptime=00:10:00.038]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.5%, avg=26.19%, GC=0.23%]
+    ^-- PageMemory [pages=35422]
+    ^-- Heap [used=281MB, free=92.03%, comm=430MB]
+    ^-- Off-heap [used=139MB, free=95.88%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=138MB, free=95.65%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:33:20,050][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=15863, reusePages=17]
+[13:34:20,053][INFO][grid-timeout-worker-#23][IgniteKernal] 
+Metrics for local node (to disable set 'metricsLogFrequency' to 0)
+    ^-- Node [id=ba156a74, uptime=00:11:00.043]
+    ^-- H/N/C [hosts=1, nodes=1, CPUs=4]
+    ^-- CPU [cur=25.5%, avg=26.13%, GC=0.23%]
+    ^-- PageMemory [pages=35422]
+    ^-- Heap [used=147MB, free=95.82%, comm=425MB]
+    ^-- Off-heap [used=139MB, free=95.88%, comm=336MB]
+    ^--   sysMemPlc region [used=0MB, free=99.21%, comm=40MB]
+    ^--   default region [used=138MB, free=95.65%, comm=256MB]
+    ^--   TxLog region [used=0MB, free=100%, comm=40MB]
+    ^-- Outbound messages queue [size=0]
+    ^-- Public thread pool [active=0, idle=0, qSize=0]
+    ^-- System thread pool [active=0, idle=6, qSize=0]
+[13:34:20,054][INFO][grid-timeout-worker-#23][IgniteKernal] FreeList [name=null, buckets=256, dataPages=15863, reusePages=23]

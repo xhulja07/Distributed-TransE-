@@ -1,0 +1,123 @@
+[12:49:16,833][WARNING][main][G] Ignite work directory is not provided, automatically resolved to: /home/xshaini/apache-ignite-2.7.5-bin/work
+[12:49:17,017][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.7.6#20190911-sha1:21f7ca41
+>>> 2019 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[12:49:17,024][INFO][main][IgniteKernal] Config URL: file:/home/xshaini/apache-ignite-2.7.5-bin/examples/config/example-ignite.xml
+[12:49:17,038][INFO][main][IgniteKernal] IgniteConfiguration [igniteInstanceName=null, pubPoolSize=8, svcPoolSize=8, callbackPoolSize=8, stripedPoolSize=8, sysPoolSize=8, mgmtPoolSize=4, igfsPoolSize=4, dataStreamerPoolSize=8, utilityCachePoolSize=8, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=8, igniteHome=/home/xshaini/apache-ignite-2.7.5-bin, igniteWorkDir=/home/xshaini/apache-ignite-2.7.5-bin/work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@6107227e, nodeId=b226c03a-968a-4bbb-bc94-8c9c914ba0d6, marsh=BinaryMarshaller [], marshLocJobs=false, daemon=false, p2pEnabled=true, netTimeout=5000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$FirstConnectionPolicy@206a70ef, enableForcibleNodeKill=false, enableTroubleshootingLog=false, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=4, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@292b08d6[Count = 1], stopping=false], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@22555ebf, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@54d9d12d, addrRslvr=null, encryptionSpi=org.apache.ignite.spi.encryption.noop.NoopEncryptionSpi@38425407, clientMode=false, rebalanceThreadPoolSize=1, txCfg=TransactionConfiguration [txSerEnabled=false, dfltIsolation=REPEATABLE_READ, dfltConcurrency=PESSIMISTIC, dfltTxTimeout=0, txTimeoutOnPartitionMapExchange=0, pessimisticTxLogSize=0, pessimisticTxLogLinger=10000, tmLookupClsName=null, txManagerFactory=null, useJtaSync=false], cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, sysWorkerBlockedTimeout=null, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=ConnectorConfiguration [jettyPath=null, host=null, port=11211, noDelay=true, directBuf=false, sndBufSize=32768, rcvBufSize=32768, idleQryCurTimeout=600000, idleQryCurCheckFreq=60000, sndQueueLimit=0, selectorCnt=4, idleTimeout=7000, sslEnabled=false, sslClientAuth=false, sslCtxFactory=null, sslFactory=null, portRange=100, threadPoolSize=8, msgInterceptor=null], odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=DataStorageConfiguration [sysRegionInitSize=41943040, sysRegionMaxSize=104857600, pageSize=0, concLvl=0, dfltDataRegConf=DataRegionConfiguration [name=default, maxSize=3335327744, initSize=268435456, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=false, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=false, checkpointPageBufSize=0], dataRegions=null, storagePath=null, checkpointFreq=180000, lockWaitTime=10000, checkpointThreads=4, checkpointWriteOrder=SEQUENTIAL, walHistSize=20, maxWalArchiveSize=1073741824, walSegments=10, walSegmentSize=67108864, walPath=db/wal, walArchivePath=db/wal/archive, metricsEnabled=false, walMode=LOG_ONLY, walTlbSize=131072, walBuffSize=0, walFlushFreq=2000, walFsyncDelay=1000, walRecordIterBuffSize=67108864, alwaysWriteFullPages=false, fileIOFactory=org.apache.ignite.internal.processors.cache.persistence.file.AsyncFileIOFactory@1165b38, metricsSubIntervalCnt=5, metricsRateTimeInterval=60000, walAutoArchiveAfterInactivity=-1, writeThrottlingEnabled=false, walCompactionEnabled=false, walCompactionLevel=1, checkpointReadLockTimeout=null], activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=8, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], mvccVacuumThreadCnt=2, mvccVacuumFreq=5000, authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[12:49:17,039][INFO][main][IgniteKernal] Daemon mode: off
+[12:49:17,039][INFO][main][IgniteKernal] OS: Linux 4.15.0-72-generic amd64
+[12:49:17,039][INFO][main][IgniteKernal] OS user: xshaini
+[12:49:17,040][INFO][main][IgniteKernal] PID: 21196
+[12:49:17,040][INFO][main][IgniteKernal] Language runtime: Scala ver. 2.11.11
+[12:49:17,040][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_211-b12 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.211-b12
+[12:49:17,042][INFO][main][IgniteKernal] VM total memory: 3.5GB
+[12:49:17,042][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[12:49:17,042][INFO][main][IgniteKernal] Logger: JavaLogger [quiet=true, config=null]
+[12:49:17,042][INFO][main][IgniteKernal] IGNITE_HOME=/home/xshaini/apache-ignite-2.7.5-bin
+[12:49:17,042][INFO][main][IgniteKernal] VM arguments: [-Dfile.encoding=UTF-8, -Xbootclasspath/p:/home/xshaini/scala-SDK-4.7.0/eclipse/plugins/org.scala-ide.scala211.jars_4.7.0.201709291351/target/jars/scala-library.jar:/home/xshaini/scala-SDK-4.7.0/eclipse/plugins/org.scala-ide.scala211.jars_4.7.0.201709291351/target/jars/scala-reflect.jar]
+[12:49:17,042][INFO][main][IgniteKernal] System cache's DataRegion size is configured to 40 MB. Use DataStorageConfiguration.systemRegionInitialSize property to change the setting.
+[12:49:17,049][INFO][main][IgniteKernal] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[12:49:17,049][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[12:49:17,049][WARNING][main][IgniteKernal] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[12:49:17,053][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /home/xshaini/apache-ignite-2.7.5-bin/libs/licenses
+[12:49:17,054][WARNING][pub-#22][GridDiagnostic] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[12:49:17,109][INFO][main][IgnitePluginProcessor] Configured plugins:
+[12:49:17,110][INFO][main][IgnitePluginProcessor]   ^-- None
+[12:49:17,110][INFO][main][IgnitePluginProcessor] 
+[12:49:17,111][INFO][main][FailureProcessor] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=[SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[12:49:17,168][INFO][main][TcpCommunicationSpi] Successfully bound communication NIO server to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0, selectorsCnt=4, selectorSpins=0, pairedConn=false]
+[12:49:17,173][WARNING][main][TcpCommunicationSpi] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[12:49:17,190][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[12:49:17,221][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[12:49:17,229][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[12:49:17,460][WARNING][main][IgniteCacheDatabaseSharedManager] DataRegionConfiguration.maxWalArchiveSize instead DataRegionConfiguration.walHistorySize would be used for removing old archive wal files
+[12:49:17,477][INFO][main][PartitionsEvictManager] Evict partition permits=2
+[12:49:17,644][INFO][main][ClientListenerProcessor] Client connector processor has started on TCP port 10801
+[12:49:17,682][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+[12:49:17,716][INFO][main][IgniteKernal] Non-loopback local IPs: 172.168.1.60, fe80:0:0:0:c537:4cc4:a945:74b5%wlp2s0
+[12:49:17,716][INFO][main][IgniteKernal] Enabled local MACs: 1002B5D9B0B6
+[12:49:17,745][INFO][main][TcpDiscoverySpi] Connection check threshold is calculated: 10000
+[12:49:17,748][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47501, localHost=0.0.0.0/0.0.0.0, locNodeId=b226c03a-968a-4bbb-bc94-8c9c914ba0d6]
+[12:49:19,016][INFO][tcp-disco-srvr-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=33689]
+[12:49:19,028][INFO][tcp-disco-srvr-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=33689]
+[12:49:19,029][INFO][tcp-disco-sock-reader-#5][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:33689, rmtPort=33689]
+[12:49:19,081][INFO][tcp-disco-msg-worker-#2][TcpDiscoverySpi] New next node [newNext=TcpDiscoveryNode [id=8063878e-0fdb-4842-aba4-0dd492659e80, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1576756159032, loc=false, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false]]
+[12:49:19,104][INFO][disco-notifier-worker-#41][MvccProcessorImpl] Assigned mvcc coordinator [crd=MvccCoordinator [nodeId=8063878e-0fdb-4842-aba4-0dd492659e80, crdVer=1576755652965, topVer=AffinityTopologyVersion [topVer=6, minorTopVer=0]], crdNode=TcpDiscoveryNode [id=8063878e-0fdb-4842-aba4-0dd492659e80, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1576756159032, loc=false, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false]]
+[12:49:19,107][SEVERE][main][IgniteKernal] Failed to start manager: GridManagerAdapter [enabled=true, name=o.a.i.i.managers.discovery.GridDiscoveryManager]
+class org.apache.ignite.IgniteCheckedException: Remote node has peer class loading enabled flag different from local [locId8=b226c03a, locPeerClassLoading=true, rmtId8=8063878e, rmtPeerClassLoading=false, rmtAddrs=[172.168.1.60/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /172.168.1.60], rmtNode=ClusterNode [id=8063878e-0fdb-4842-aba4-0dd492659e80, order=1, addr=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], daemon=false]]
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.checkAttributes(GridDiscoveryManager.java:1269)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:963)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1682)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1066)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2038)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1730)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1158)
+	at org.apache.ignite.internal.IgnitionEx.startConfigurations(IgnitionEx.java:1076)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:962)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:861)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:731)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:700)
+	at org.apache.ignite.Ignition.start(Ignition.java:348)
+	at org.apache.ignite.scalar.scalar$.apply(scalar.scala:237)
+	at ScalarCacheExample$.delayedEndpoint$ScalarCacheExample$1( ScalarCacheExample.scala:54)
+	at ScalarCacheExample$delayedInit$body.apply( ScalarCacheExample.scala:35)
+	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)
+	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
+	at scala.App$$anonfun$main$1.apply(App.scala:76)
+	at scala.App$$anonfun$main$1.apply(App.scala:76)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:35)
+	at scala.App$class.main(App.scala:76)
+	at ScalarCacheExample$.main( ScalarCacheExample.scala:35)
+	at ScalarCacheExample.main( ScalarCacheExample.scala)
+[12:49:19,108][SEVERE][main][IgniteKernal] Got exception while starting (will rollback startup routine).
+class org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1687)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1066)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2038)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1730)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1158)
+	at org.apache.ignite.internal.IgnitionEx.startConfigurations(IgnitionEx.java:1076)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:962)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:861)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:731)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:700)
+	at org.apache.ignite.Ignition.start(Ignition.java:348)
+	at org.apache.ignite.scalar.scalar$.apply(scalar.scala:237)
+	at ScalarCacheExample$.delayedEndpoint$ScalarCacheExample$1( ScalarCacheExample.scala:54)
+	at ScalarCacheExample$delayedInit$body.apply( ScalarCacheExample.scala:35)
+	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)
+	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
+	at scala.App$$anonfun$main$1.apply(App.scala:76)
+	at scala.App$$anonfun$main$1.apply(App.scala:76)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:35)
+	at scala.App$class.main(App.scala:76)
+	at ScalarCacheExample$.main( ScalarCacheExample.scala:35)
+	at ScalarCacheExample.main( ScalarCacheExample.scala)
+Caused by: class org.apache.ignite.IgniteCheckedException: Remote node has peer class loading enabled flag different from local [locId8=b226c03a, locPeerClassLoading=true, rmtId8=8063878e, rmtPeerClassLoading=false, rmtAddrs=[172.168.1.60/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /172.168.1.60], rmtNode=ClusterNode [id=8063878e-0fdb-4842-aba4-0dd492659e80, order=1, addr=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], daemon=false]]
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.checkAttributes(GridDiscoveryManager.java:1269)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:963)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1682)
+	... 22 more
+[12:49:19,115][INFO][main][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[12:49:19,126][INFO][disco-notifier-worker-#41][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=6, minorTopVer=0], resVer=null, err=class org.apache.ignite.internal.NodeStoppingException: Node is stopping: null]
+[12:49:19,144][INFO][disco-notifier-worker-#41][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=b226c03a-968a-4bbb-bc94-8c9c914ba0d6, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=6, minorTopVer=0], evt=NODE_JOINED, evtNode=TcpDiscoveryNode [id=b226c03a-968a-4bbb-bc94-8c9c914ba0d6, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.168.1.60], sockAddrs=[/172.168.1.60:47501, /0:0:0:0:0:0:0:1%lo:47501, /127.0.0.1:47501], discPort=47501, order=6, intOrder=4, lastExchangeTime=1576756159113, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=null, durationFromInit=1576756159135]
+[12:49:19,149][INFO][tcp-disco-sock-reader-#5][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:33689, rmtPort=33689
+[12:49:19,176][INFO][main][IgniteKernal] 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 2.7.6#20190911-sha1:21f7ca41c4348909e2fd26ccf59b5b2ce1f4474e stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Grid uptime: 00:00:02.999
+
+

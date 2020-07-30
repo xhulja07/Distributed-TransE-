@@ -1,0 +1,1373 @@
+[2019-11-23 13:58:06,291][WARN ][main][G] Ignite work directory is not provided, automatically resolved to: /home/xshaini/apache-ignite-2.7.5-bin/work
+[2019-11-23 13:58:06,473][INFO ][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.7.6#20190911-sha1:21f7ca41
+>>> 2019 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[2019-11-23 13:58:06,483][INFO ][main][IgniteKernal] Config URL: file:/home/xshaini/TransE-Scala/code/example-ignite.xml
+[2019-11-23 13:58:06,498][INFO ][main][IgniteKernal] IgniteConfiguration [igniteInstanceName=null, pubPoolSize=8, svcPoolSize=8, callbackPoolSize=8, stripedPoolSize=8, sysPoolSize=8, mgmtPoolSize=4, igfsPoolSize=4, dataStreamerPoolSize=8, utilityCachePoolSize=8, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=8, igniteHome=/home/xshaini/apache-ignite-2.7.5-bin, igniteWorkDir=/home/xshaini/apache-ignite-2.7.5-bin/work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@6fdbe764, nodeId=90a738cb-8a0a-4428-aa3f-a66772b811f5, marsh=BinaryMarshaller [], marshLocJobs=false, daemon=false, p2pEnabled=true, netTimeout=5000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$FirstConnectionPolicy@2f666ebb, enableForcibleNodeKill=false, enableTroubleshootingLog=false, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=4, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@19976a65[Count = 1], stopping=false], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@a1f72f5, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@2dc9b0f5, addrRslvr=null, encryptionSpi=org.apache.ignite.spi.encryption.noop.NoopEncryptionSpi@6531a794, clientMode=false, rebalanceThreadPoolSize=1, txCfg=TransactionConfiguration [txSerEnabled=false, dfltIsolation=REPEATABLE_READ, dfltConcurrency=PESSIMISTIC, dfltTxTimeout=0, txTimeoutOnPartitionMapExchange=0, pessimisticTxLogSize=0, pessimisticTxLogLinger=10000, tmLookupClsName=null, txManagerFactory=null, useJtaSync=false], cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, sysWorkerBlockedTimeout=null, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=ConnectorConfiguration [jettyPath=null, host=null, port=11211, noDelay=true, directBuf=false, sndBufSize=32768, rcvBufSize=32768, idleQryCurTimeout=600000, idleQryCurCheckFreq=60000, sndQueueLimit=0, selectorCnt=4, idleTimeout=7000, sslEnabled=false, sslClientAuth=false, sslCtxFactory=null, sslFactory=null, portRange=100, threadPoolSize=8, msgInterceptor=null], odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=DataStorageConfiguration [sysRegionInitSize=41943040, sysRegionMaxSize=104857600, pageSize=0, concLvl=0, dfltDataRegConf=DataRegionConfiguration [name=default, maxSize=3335326924, initSize=268435456, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=false, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=false, checkpointPageBufSize=0], dataRegions=null, storagePath=null, checkpointFreq=180000, lockWaitTime=10000, checkpointThreads=4, checkpointWriteOrder=SEQUENTIAL, walHistSize=20, maxWalArchiveSize=1073741824, walSegments=10, walSegmentSize=67108864, walPath=db/wal, walArchivePath=db/wal/archive, metricsEnabled=false, walMode=LOG_ONLY, walTlbSize=131072, walBuffSize=0, walFlushFreq=2000, walFsyncDelay=1000, walRecordIterBuffSize=67108864, alwaysWriteFullPages=false, fileIOFactory=org.apache.ignite.internal.processors.cache.persistence.file.AsyncFileIOFactory@4bbf6d0e, metricsSubIntervalCnt=5, metricsRateTimeInterval=60000, walAutoArchiveAfterInactivity=-1, writeThrottlingEnabled=false, walCompactionEnabled=false, walCompactionLevel=1, checkpointReadLockTimeout=null], activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=8, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], mvccVacuumThreadCnt=2, mvccVacuumFreq=5000, authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[2019-11-23 13:58:06,499][INFO ][main][IgniteKernal] Daemon mode: off
+[2019-11-23 13:58:06,499][INFO ][main][IgniteKernal] OS: Linux 4.15.0-70-generic amd64
+[2019-11-23 13:58:06,499][INFO ][main][IgniteKernal] OS user: xshaini
+[2019-11-23 13:58:06,500][INFO ][main][IgniteKernal] PID: 8243
+[2019-11-23 13:58:06,501][INFO ][main][IgniteKernal] Language runtime: Scala ver. 2.11.11
+[2019-11-23 13:58:06,501][INFO ][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_211-b12 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.211-b12
+[2019-11-23 13:58:06,502][INFO ][main][IgniteKernal] VM total memory: 3.5GB
+[2019-11-23 13:58:06,502][INFO ][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[2019-11-23 13:58:06,502][INFO ][main][IgniteKernal] Logger: Log4JLogger [quiet=true, config=/home/xshaini/apache-ignite-2.7.5-bin/config/ignite-log4j.xml]
+[2019-11-23 13:58:06,502][INFO ][main][IgniteKernal] IGNITE_HOME=/home/xshaini/apache-ignite-2.7.5-bin
+[2019-11-23 13:58:06,503][INFO ][main][IgniteKernal] VM arguments: [-Dfile.encoding=UTF-8, -Xbootclasspath/p:/home/xshaini/scala-SDK-4.7.0/eclipse/plugins/org.scala-ide.scala211.jars_4.7.0.201709291351/target/jars/scala-library.jar:/home/xshaini/scala-SDK-4.7.0/eclipse/plugins/org.scala-ide.scala211.jars_4.7.0.201709291351/target/jars/scala-reflect.jar]
+[2019-11-23 13:58:06,503][INFO ][main][IgniteKernal] System cache's DataRegion size is configured to 40 MB. Use DataStorageConfiguration.systemRegionInitialSize property to change the setting.
+[2019-11-23 13:58:06,510][INFO ][main][IgniteKernal] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[2019-11-23 13:58:06,510][WARN ][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[2019-11-23 13:58:06,510][WARN ][main][IgniteKernal] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[2019-11-23 13:58:06,515][INFO ][main][IgniteKernal] 3-rd party licenses can be found at: /home/xshaini/apache-ignite-2.7.5-bin/libs/licenses
+[2019-11-23 13:58:06,517][WARN ][pub-#22][GridDiagnostic] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[2019-11-23 13:58:06,572][INFO ][main][IgnitePluginProcessor] Configured plugins:
+[2019-11-23 13:58:06,572][INFO ][main][IgnitePluginProcessor]   ^-- None
+[2019-11-23 13:58:06,572][INFO ][main][IgnitePluginProcessor] 
+[2019-11-23 13:58:06,574][INFO ][main][FailureProcessor] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=[SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[2019-11-23 13:58:06,632][INFO ][main][TcpCommunicationSpi] Successfully bound communication NIO server to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0, selectorsCnt=4, selectorSpins=0, pairedConn=false]
+[2019-11-23 13:58:06,638][WARN ][main][TcpCommunicationSpi] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[2019-11-23 13:58:06,666][WARN ][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[2019-11-23 13:58:06,694][WARN ][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[2019-11-23 13:58:06,786][INFO ][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[2019-11-23 13:58:07,228][WARN ][main][IgniteCacheDatabaseSharedManager] DataRegionConfiguration.maxWalArchiveSize instead DataRegionConfiguration.walHistorySize would be used for removing old archive wal files
+[2019-11-23 13:58:07,284][INFO ][main][PartitionsEvictManager] Evict partition permits=2
+[2019-11-23 13:58:07,824][INFO ][main][ClientListenerProcessor] Client connector processor has started on TCP port 10800
+[2019-11-23 13:58:07,947][INFO ][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11211]
+[2019-11-23 13:58:08,023][INFO ][main][IgniteKernal] Non-loopback local IPs: 172.16.2.60, fe80:0:0:0:8c20:4568:85a6:55e3%wlp2s0
+[2019-11-23 13:58:08,023][INFO ][main][IgniteKernal] Enabled local MACs: 1002B5D9B0B6
+[2019-11-23 13:58:08,103][INFO ][main][TcpDiscoverySpi] Connection check threshold is calculated: 10000
+[2019-11-23 13:58:08,108][INFO ][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47500, localHost=0.0.0.0/0.0.0.0, locNodeId=90a738cb-8a0a-4428-aa3f-a66772b811f5]
+[2019-11-23 13:58:09,362][INFO ][disco-notifier-worker-#41][MvccProcessorImpl] Assigned mvcc coordinator [crd=MvccCoordinator [nodeId=90a738cb-8a0a-4428-aa3f-a66772b811f5, crdVer=1574513889358, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], crdNode=TcpDiscoveryNode [id=90a738cb-8a0a-4428-aa3f-a66772b811f5, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.16.2.60], sockAddrs=[/172.16.2.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1574513888102, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false]]
+[2019-11-23 13:58:09,396][INFO ][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], mvccCrd=MvccCoordinator [nodeId=90a738cb-8a0a-4428-aa3f-a66772b811f5, crdVer=1574513889358, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=true, crd=true, evt=NODE_JOINED, evtNode=90a738cb-8a0a-4428-aa3f-a66772b811f5, customEvt=null, allowMerge=false]
+[2019-11-23 13:58:09,417][INFO ][exchange-worker-#43][msg] Components activation performed in 21 ms.
+[2019-11-23 13:58:09,558][INFO ][exchange-worker-#43][GridCacheProcessor] Started cache [name=ignite-sys-cache, id=-2100569601, memoryPolicyName=sysMemPlc, mode=REPLICATED, atomicity=TRANSACTIONAL, backups=2147483647, mvcc=false], encryptionEnabled=false]
+[2019-11-23 13:58:09,559][INFO ][exchange-worker-#43][GridCacheProcessor] Starting caches on local join performed in 142 ms.
+[2019-11-23 13:58:09,568][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Skipped waiting for partitions release future (local node is joining) [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]]
+[2019-11-23 13:58:09,628][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]]
+[2019-11-23 13:58:09,628][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[2019-11-23 13:58:09,633][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 5 ms.
+[2019-11-23 13:58:09,633][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 0 ms.
+[2019-11-23 13:58:09,647][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 13 ms.
+[2019-11-23 13:58:09,648][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[2019-11-23 13:58:09,648][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], err=null]
+[2019-11-23 13:58:09,649][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Detecting lost partitions performed in 1 ms.
+[2019-11-23 13:58:09,649][INFO ][exchange-worker-#43][MvccProcessorImpl] Initialize local node as mvcc coordinator [node=90a738cb-8a0a-4428-aa3f-a66772b811f5, crdVer=1574513889358]
+[2019-11-23 13:58:09,658][INFO ][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=ignite-sys-cache, localNodeId=90a738cb-8a0a-4428-aa3f-a66772b811f5
+[2019-11-23 13:58:09,659][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=90a738cb-8a0a-4428-aa3f-a66772b811f5, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], evt=NODE_JOINED, evtNode=TcpDiscoveryNode [id=90a738cb-8a0a-4428-aa3f-a66772b811f5, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.16.2.60], sockAddrs=[/172.16.2.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1574513888102, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], durationFromInit=262]
+[2019-11-23 13:58:09,659][INFO ][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0], crd=true]
+[2019-11-23 13:58:09,664][INFO ][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=0], force=false, evt=NODE_JOINED, node=90a738cb-8a0a-4428-aa3f-a66772b811f5]
+[2019-11-23 13:58:09,748][INFO ][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[2019-11-23 13:58:09,748][INFO ][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[2019-11-23 13:58:09,748][INFO ][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[2019-11-23 13:58:09,749][INFO ][main][IgniteKernal]   ^-- Enable G1 Garbage Collector (add '-XX:+UseG1GC' to JVM options)
+[2019-11-23 13:58:09,749][INFO ][main][IgniteKernal]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[2019-11-23 13:58:09,749][INFO ][main][IgniteKernal]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[2019-11-23 13:58:09,749][INFO ][main][IgniteKernal]   ^-- Disable processing of calls to System.gc() (add '-XX:+DisableExplicitGC' to JVM options)
+[2019-11-23 13:58:09,749][INFO ][main][IgniteKernal] Refer to this page for more performance suggestions: https://apacheignite.readme.io/docs/jvm-and-system-tuning
+[2019-11-23 13:58:09,749][INFO ][main][IgniteKernal] 
+[2019-11-23 13:58:09,749][INFO ][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[2019-11-23 13:58:09,753][INFO ][main][IgniteKernal] Data Regions Configured:
+[2019-11-23 13:58:09,753][INFO ][main][IgniteKernal]   ^-- default [initSize=256.0 MiB, maxSize=3.1 GiB, persistence=false]
+[2019-11-23 13:58:09,754][INFO ][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 2.7.6#20190911-sha1:21f7ca41c4348909e2fd26ccf59b5b2ce1f4474e
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 4.15.0-70-generic amd64
+>>> CPU(s): 4
+>>> Heap: 3.5GB
+>>> VM name: 8243@eis-seoul
+>>> Local node [ID=90A738CB-8A0A-4428-AA3F-A66772B811F5, order=1, clientMode=false]
+>>> Local node addresses: [172.16.2.60/0:0:0:0:0:0:0:1%lo, /127.0.0.1, /172.16.2.60]
+>>> Local ports: TCP:10800 TCP:11211 TCP:47100 UDP:47400 TCP:47500 
+
+[2019-11-23 13:58:09,758][INFO ][main][GridDiscoveryManager] Topology snapshot [ver=1, locNode=90a738cb, servers=1, clients=0, state=ACTIVE, CPUs=4, offheap=3.1GB, heap=3.5GB]
+[2019-11-23 13:58:09,833][INFO ][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], mvccCrd=MvccCoordinator [nodeId=90a738cb-8a0a-4428-aa3f-a66772b811f5, crdVer=1574513889358, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=90a738cb-8a0a-4428-aa3f-a66772b811f5, customEvt=DynamicCacheChangeBatch [id=6c147589e61-ec92628d-50df-427c-b52f-cbc167331e89, reqs=[DynamicCacheChangeRequest [cacheName=ScalarCachePopularNumbersExample$, hasCfg=true, nodeId=90a738cb-8a0a-4428-aa3f-a66772b811f5, clientStartOnly=false, stop=false, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=[ScalarCachePopularNumbersExample$], stopCaches=null, startGrps=[ScalarCachePopularNumbersExample$], stopGrps=[], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[2019-11-23 13:58:09,835][INFO ][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 2 ms.
+[2019-11-23 13:58:09,992][INFO ][exchange-worker-#43][GridCacheProcessor] Started cache [name=ScalarCachePopularNumbersExample$, id=-2078253375, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[2019-11-23 13:58:09,994][INFO ][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 159 ms.
+[2019-11-23 13:58:09,996][INFO ][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 2 ms.
+[2019-11-23 13:58:10,003][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[2019-11-23 13:58:10,008][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]]
+[2019-11-23 13:58:10,008][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[2019-11-23 13:58:10,099][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] finishExchangeOnCoordinator [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=1]]
+[2019-11-23 13:58:10,099][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Affinity changes (coordinator) applied in 0 ms.
+[2019-11-23 13:58:10,101][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions validation performed in 2 ms.
+[2019-11-23 13:58:10,101][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Partitions assignment performed in 0 ms.
+[2019-11-23 13:58:10,116][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Preparing Full Message performed in 12 ms.
+[2019-11-23 13:58:10,117][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Full Message to all nodes performed in 0 ms.
+[2019-11-23 13:58:10,117][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], resVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], err=null]
+[2019-11-23 13:58:10,123][INFO ][exchange-worker-#43][GridCacheProcessor] Finish proxy initialization, cacheName=ScalarCachePopularNumbersExample$, localNodeId=90a738cb-8a0a-4428-aa3f-a66772b811f5
+[2019-11-23 13:58:10,124][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=90a738cb-8a0a-4428-aa3f-a66772b811f5, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=90a738cb-8a0a-4428-aa3f-a66772b811f5, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.16.2.60], sockAddrs=[/172.16.2.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1574513888102, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], durationFromInit=286]
+[2019-11-23 13:58:10,124][INFO ][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=1], crd=true]
+[2019-11-23 13:58:10,128][INFO ][exchange-worker-#43][GridCachePartitionExchangeManager] Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=1], force=false, evt=DISCOVERY_CUSTOM_EVT, node=90a738cb-8a0a-4428-aa3f-a66772b811f5]
+[2019-11-23 13:58:15,950][INFO ][Thread-2][G] Invoking shutdown hook...
+[2019-11-23 13:58:16,001][ERROR][Thread-2][DataStreamerImpl] DataStreamer operation failed.
+class org.apache.ignite.IgniteCheckedException: Data streamer has been cancelled: DataStreamerImpl [bufLdrSzPerThread=4096, rcvr=ScalarCachePopularNumbersExample$IncrementingUpdater@6550e320, ioPlcRslvr=null, cacheName=ScalarCachePopularNumbersExample$, bufSize=2048, parallelOps=0, timeout=-1, autoFlushFreq=0, bufMappings={90a738cb-8a0a-4428-aa3f-a66772b811f5=Buffer [node=TcpDiscoveryNode [id=90a738cb-8a0a-4428-aa3f-a66772b811f5, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.16.2.60], sockAddrs=[/172.16.2.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1574513888102, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], isLocNode=true, idGen=0, sem=java.util.concurrent.Semaphore@400dbb7f[Permits = 2], perNodeParallelOps=64, entriesCnt=4096, locFutsSize=61, reqsSize=0]}, cacheObjProc=GridProcessorAdapter [], cacheObjCtx=org.apache.ignite.internal.processors.cache.binary.CacheObjectBinaryContext@7a3615fc, cancelled=true, cancellationReason=null, failCntr=0, activeFuts=GridConcurrentHashSet [elements=[GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1258120701], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=23604842], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=205988608], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=946260334], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1426182600], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1565601243], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1689309690], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=976949492], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=430050226], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=957683143], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=678858277], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=533951552], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=950330032], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=496259008], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=169251264], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=261477965], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1850322961], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=265373577], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=602572848], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=491762195], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=622609024], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1773373551], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=2036431933], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=53825896], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1280512370], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1931348991], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1289903687], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=4121176], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=227030447], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1849372115], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=2066315072], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=948315053], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=196161345], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=751702204], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=376660032], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=179455108], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1117719720], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=568221863], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1663844181], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1099892020], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=2085713965]]], jobPda=org.apache.ignite.internal.processors.datastreamer.DataStreamerImpl$DataStreamerPda@69bbc439, depCls=null, fut=DataStreamerFuture [super=GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1145064498]], publicFut=IgniteFuture [orig=DataStreamerFuture [super=GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1145064498]]], disconnectErr=null, closed=true, lastFlushTime=1574513890137, skipStore=false, keepBinary=false, maxRemapCnt=32, remapSem=java.util.concurrent.Semaphore@7b78df70[Permits = 2147483647], remapOwning=false]
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerImpl$5.apply(DataStreamerImpl.java:950)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerImpl$5.apply(DataStreamerImpl.java:919)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.notifyListener(GridFutureAdapter.java:385)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.unblock(GridFutureAdapter.java:349)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.unblockAll(GridFutureAdapter.java:337)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:497)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:476)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:464)
+	at org.apache.ignite.internal.util.future.GridCompoundFuture.apply(GridCompoundFuture.java:116)
+	at org.apache.ignite.internal.util.future.GridCompoundFuture.apply(GridCompoundFuture.java:45)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.notifyListener(GridFutureAdapter.java:385)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.unblock(GridFutureAdapter.java:349)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.unblockAll(GridFutureAdapter.java:337)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:497)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:476)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:464)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerImpl$Buffer$2.apply(DataStreamerImpl.java:1818)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerImpl$Buffer$2.apply(DataStreamerImpl.java:1808)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.notifyListener(GridFutureAdapter.java:385)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.unblock(GridFutureAdapter.java:349)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.unblockAll(GridFutureAdapter.java:337)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:497)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.onCancelled(GridFutureAdapter.java:525)
+	at org.apache.ignite.internal.util.worker.GridWorkerFuture.cancel(GridWorkerFuture.java:34)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerImpl$Buffer.cancelAll(DataStreamerImpl.java:2078)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerImpl.closeEx(DataStreamerImpl.java:1335)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerImpl.closeEx(DataStreamerImpl.java:1296)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor.onKernalStop(DataStreamProcessor.java:155)
+	at org.apache.ignite.internal.IgniteKernal.stop0(IgniteKernal.java:2280)
+	at org.apache.ignite.internal.IgniteKernal.stop(IgniteKernal.java:2228)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.stop0(IgnitionEx.java:2617)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.stop(IgnitionEx.java:2580)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance$6.run(IgnitionEx.java:2100)
+Caused by: class org.apache.ignite.internal.IgniteFutureCancelledCheckedException: Future was cancelled: GridFutureAdapter [ignoreInterrupts=false, state=CANCELLED, res=null, hash=124018276]
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.resolve(GridFutureAdapter.java:256)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.get0(GridFutureAdapter.java:172)
+	at org.apache.ignite.internal.util.future.GridFutureAdapter.get(GridFutureAdapter.java:141)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerImpl$Buffer$2.apply(DataStreamerImpl.java:1815)
+	... 16 more
+[2019-11-23 13:58:16,155][ERROR][data-streamer-stripe-4-#13][GridDhtAtomicCache] <ScalarCachePopularNumbersExample$> Unexpected exception during cache update
+class org.apache.ignite.IgniteInterruptedException: Thread got interrupted while trying to acquire table lock.
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:308)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.update(GridH2Table.java:456)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.store(IgniteH2Indexing.java:768)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.store(GridQueryProcessor.java:1902)
+	at org.apache.ignite.internal.processors.cache.query.GridCacheQueryManager.store(GridCacheQueryManager.java:404)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.finishUpdate(IgniteCacheOffheapManagerImpl.java:2637)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke0(IgniteCacheOffheapManagerImpl.java:1650)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke(IgniteCacheOffheapManagerImpl.java:1625)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl.invoke(IgniteCacheOffheapManagerImpl.java:428)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerUpdate(GridCacheMapEntry.java:2295)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateSingle(GridDhtAtomicCache.java:2494)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update(GridDhtAtomicCache.java:1951)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1780)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+	at org.apache.ignite.internal.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+	at org.apache.ignite.internal.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at org.apache.ignite.internal.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1302)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.lockInterruptibly(ReentrantReadWriteLock.java:772)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:295)
+	... 36 more
+[2019-11-23 13:58:16,161][ERROR][data-streamer-stripe-5-#14][GridDhtAtomicCache] <ScalarCachePopularNumbersExample$> Unexpected exception during cache update
+class org.apache.ignite.IgniteInterruptedException: Thread got interrupted while trying to acquire table lock.
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:308)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.update(GridH2Table.java:456)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.store(IgniteH2Indexing.java:768)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.store(GridQueryProcessor.java:1902)
+	at org.apache.ignite.internal.processors.cache.query.GridCacheQueryManager.store(GridCacheQueryManager.java:404)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.finishUpdate(IgniteCacheOffheapManagerImpl.java:2637)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke0(IgniteCacheOffheapManagerImpl.java:1650)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke(IgniteCacheOffheapManagerImpl.java:1625)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl.invoke(IgniteCacheOffheapManagerImpl.java:428)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerUpdate(GridCacheMapEntry.java:2295)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateSingle(GridDhtAtomicCache.java:2494)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update(GridDhtAtomicCache.java:1951)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1780)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+	at org.apache.ignite.internal.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+	at org.apache.ignite.internal.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at org.apache.ignite.internal.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1302)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.lockInterruptibly(ReentrantReadWriteLock.java:772)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:295)
+	... 36 more
+[2019-11-23 13:58:16,165][ERROR][data-streamer-stripe-7-#16][GridDhtAtomicCache] <ScalarCachePopularNumbersExample$> Unexpected exception during cache update
+class org.apache.ignite.IgniteInterruptedException: Thread got interrupted while trying to acquire table lock.
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:308)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.update(GridH2Table.java:456)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.store(IgniteH2Indexing.java:768)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.store(GridQueryProcessor.java:1902)
+	at org.apache.ignite.internal.processors.cache.query.GridCacheQueryManager.store(GridCacheQueryManager.java:404)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.finishUpdate(IgniteCacheOffheapManagerImpl.java:2637)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke0(IgniteCacheOffheapManagerImpl.java:1650)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke(IgniteCacheOffheapManagerImpl.java:1625)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl.invoke(IgniteCacheOffheapManagerImpl.java:428)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerUpdate(GridCacheMapEntry.java:2295)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateSingle(GridDhtAtomicCache.java:2494)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update(GridDhtAtomicCache.java:1951)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1780)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+	at org.apache.ignite.internal.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+	at org.apache.ignite.internal.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at org.apache.ignite.internal.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1302)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.lockInterruptibly(ReentrantReadWriteLock.java:772)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:295)
+	... 36 more
+[2019-11-23 13:58:16,169][ERROR][data-streamer-stripe-7-#16][root] Critical system error detected. Will be handled accordingly to configured handler [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=[SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]], failureCtx=FailureContext [type=SYSTEM_WORKER_TERMINATION, err=java.lang.IllegalStateException: Thread data-streamer-stripe-7-#16 is terminated unexpectedly]]
+java.lang.IllegalStateException: Thread data-streamer-stripe-7-#16 is terminated unexpectedly
+	at org.apache.ignite.internal.util.StripedExecutor$Stripe.body(StripedExecutor.java:528)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-11-23 13:58:16,169][WARN ][data-streamer-stripe-7-#16][FailureProcessor] No deadlocked threads detected.
+[2019-11-23 13:58:16,221][ERROR][data-streamer-stripe-0-#9][GridDhtAtomicCache] <ScalarCachePopularNumbersExample$> Unexpected exception during cache update
+class org.apache.ignite.IgniteInterruptedException: Thread got interrupted while trying to acquire table lock.
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:308)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.update(GridH2Table.java:456)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.store(IgniteH2Indexing.java:768)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.store(GridQueryProcessor.java:1902)
+	at org.apache.ignite.internal.processors.cache.query.GridCacheQueryManager.store(GridCacheQueryManager.java:404)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.finishUpdate(IgniteCacheOffheapManagerImpl.java:2637)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke0(IgniteCacheOffheapManagerImpl.java:1650)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke(IgniteCacheOffheapManagerImpl.java:1625)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl.invoke(IgniteCacheOffheapManagerImpl.java:428)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerUpdate(GridCacheMapEntry.java:2295)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateSingle(GridDhtAtomicCache.java:2494)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update(GridDhtAtomicCache.java:1951)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1780)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+	at org.apache.ignite.internal.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+	at org.apache.ignite.internal.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at org.apache.ignite.internal.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1302)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.lockInterruptibly(ReentrantReadWriteLock.java:772)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:295)
+	... 36 more
+[2019-11-23 13:58:16,223][ERROR][data-streamer-stripe-2-#11][GridDhtAtomicCache] <ScalarCachePopularNumbersExample$> Unexpected exception during cache update
+class org.apache.ignite.IgniteInterruptedException: Thread got interrupted while trying to acquire table lock.
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:308)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.update(GridH2Table.java:456)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.store(IgniteH2Indexing.java:768)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.store(GridQueryProcessor.java:1902)
+	at org.apache.ignite.internal.processors.cache.query.GridCacheQueryManager.store(GridCacheQueryManager.java:404)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.finishUpdate(IgniteCacheOffheapManagerImpl.java:2637)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke0(IgniteCacheOffheapManagerImpl.java:1650)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke(IgniteCacheOffheapManagerImpl.java:1625)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl.invoke(IgniteCacheOffheapManagerImpl.java:428)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerUpdate(GridCacheMapEntry.java:2295)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateSingle(GridDhtAtomicCache.java:2494)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update(GridDhtAtomicCache.java:1951)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1780)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+	at org.apache.ignite.internal.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+	at org.apache.ignite.internal.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at org.apache.ignite.internal.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1302)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.lockInterruptibly(ReentrantReadWriteLock.java:772)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:295)
+	... 36 more
+[2019-11-23 13:58:16,225][ERROR][Thread-2][DataStreamProcessor] Failed to close data streamer: DataStreamerImpl [bufLdrSzPerThread=4096, rcvr=ScalarCachePopularNumbersExample$IncrementingUpdater@6550e320, ioPlcRslvr=null, cacheName=ScalarCachePopularNumbersExample$, bufSize=2048, parallelOps=0, timeout=-1, autoFlushFreq=0, bufMappings={90a738cb-8a0a-4428-aa3f-a66772b811f5=Buffer [node=TcpDiscoveryNode [id=90a738cb-8a0a-4428-aa3f-a66772b811f5, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.16.2.60], sockAddrs=[/172.16.2.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1574513888102, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], isLocNode=true, idGen=0, sem=java.util.concurrent.Semaphore@400dbb7f[Permits = 64], perNodeParallelOps=64, entriesCnt=4096, locFutsSize=0, reqsSize=0]}, cacheObjProc=GridProcessorAdapter [], cacheObjCtx=o.a.i.i.processors.cache.binary.CacheObjectBinaryContext@7a3615fc, cancelled=true, cancellationReason=class o.a.i.IgniteCheckedException: Data streamer has been cancelled: DataStreamerImpl [bufLdrSzPerThread=4096, rcvr=ScalarCachePopularNumbersExample$IncrementingUpdater@6550e320, ioPlcRslvr=null, cacheName=ScalarCachePopularNumbersExample$, bufSize=2048, parallelOps=0, timeout=-1, autoFlushFreq=0, bufMappings={90a738cb-8a0a-4428-aa3f-a66772b811f5=Buffer [node=TcpDiscoveryNode [id=90a738cb-8a0a-4428-aa3f-a66772b811f5, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.16.2.60], sockAddrs=[/172.16.2.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1574513888102, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], isLocNode=true, idGen=0, sem=java.util.concurrent.Semaphore@400dbb7f[Permits = 2], perNodeParallelOps=64, entriesCnt=4096, locFutsSize=61, reqsSize=0]}, cacheObjProc=GridProcessorAdapter [], cacheObjCtx=o.a.i.i.processors.cache.binary.CacheObjectBinaryContext@7a3615fc, cancelled=true, cancellationReason=null, failCntr=0, activeFuts=GridConcurrentHashSet [elements=[GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1258120701], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=23604842], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=205988608], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=946260334], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1426182600], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1565601243], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1689309690], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=976949492], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=430050226], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=957683143], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=678858277], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=533951552], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=950330032], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=496259008], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=169251264], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=261477965], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1850322961], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=265373577], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=602572848], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=491762195], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=622609024], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1773373551], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=2036431933], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=53825896], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1280512370], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1931348991], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1289903687], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=4121176], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=227030447], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1849372115], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=2066315072], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=948315053], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=196161345], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=751702204], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=376660032], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=179455108], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1117719720], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=568221863], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1663844181], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1099892020], GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=2085713965]]], jobPda=o.a.i.i.processors.datastreamer.DataStreamerImpl$DataStreamerPda@69bbc439, depCls=null, fut=DataStreamerFuture [super=GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1145064498]], publicFut=IgniteFuture [orig=DataStreamerFuture [super=GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=1145064498]]], disconnectErr=null, closed=true, lastFlushTime=1574513890137, skipStore=false, keepBinary=false, maxRemapCnt=32, remapSem=java.util.concurrent.Semaphore@7b78df70[Permits = 2147483647], remapOwning=false], failCntr=41, activeFuts=GridConcurrentHashSet [elements=[]], jobPda=o.a.i.i.processors.datastreamer.DataStreamerImpl$DataStreamerPda@69bbc439, depCls=null, fut=DataStreamerFuture [super=GridFutureAdapter [ignoreInterrupts=false, state=DONE, res=class o.a.i.IgniteCheckedException: Some of DataStreamer operations failed [failedCount=41], hash=1145064498]], publicFut=IgniteFuture [orig=DataStreamerFuture [super=GridFutureAdapter [ignoreInterrupts=false, state=DONE, res=class o.a.i.IgniteCheckedException: Some of DataStreamer operations failed [failedCount=41], hash=1145064498]]], disconnectErr=null, closed=true, lastFlushTime=1574513890137, skipStore=false, keepBinary=false, maxRemapCnt=32, remapSem=java.util.concurrent.Semaphore@7b78df70[Permits = 2147483647], remapOwning=false]
+class org.apache.ignite.IgniteCheckedException: Some of DataStreamer operations failed [failedCount=41]
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerImpl.closeEx(DataStreamerImpl.java:1352)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerImpl.closeEx(DataStreamerImpl.java:1296)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamProcessor.onKernalStop(DataStreamProcessor.java:155)
+	at org.apache.ignite.internal.IgniteKernal.stop0(IgniteKernal.java:2280)
+	at org.apache.ignite.internal.IgniteKernal.stop(IgniteKernal.java:2228)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.stop0(IgnitionEx.java:2617)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.stop(IgnitionEx.java:2580)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance$6.run(IgnitionEx.java:2100)
+[2019-11-23 13:58:16,225][ERROR][data-streamer-stripe-6-#15][GridDhtAtomicCache] <ScalarCachePopularNumbersExample$> Unexpected exception during cache update
+class org.apache.ignite.IgniteInterruptedException: Thread got interrupted while trying to acquire table lock.
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:308)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.update(GridH2Table.java:456)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.store(IgniteH2Indexing.java:768)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.store(GridQueryProcessor.java:1902)
+	at org.apache.ignite.internal.processors.cache.query.GridCacheQueryManager.store(GridCacheQueryManager.java:404)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.finishUpdate(IgniteCacheOffheapManagerImpl.java:2637)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke0(IgniteCacheOffheapManagerImpl.java:1650)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke(IgniteCacheOffheapManagerImpl.java:1625)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl.invoke(IgniteCacheOffheapManagerImpl.java:428)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerUpdate(GridCacheMapEntry.java:2295)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateSingle(GridDhtAtomicCache.java:2494)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update(GridDhtAtomicCache.java:1951)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1780)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+	at org.apache.ignite.internal.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+	at org.apache.ignite.internal.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at org.apache.ignite.internal.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1302)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.lockInterruptibly(ReentrantReadWriteLock.java:772)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:295)
+	... 36 more
+[2019-11-23 13:58:16,225][ERROR][data-streamer-stripe-3-#12][GridDhtAtomicCache] <ScalarCachePopularNumbersExample$> Unexpected exception during cache update
+class org.apache.ignite.IgniteInterruptedException: Thread got interrupted while trying to acquire table lock.
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:308)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.update(GridH2Table.java:456)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.store(IgniteH2Indexing.java:768)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.store(GridQueryProcessor.java:1902)
+	at org.apache.ignite.internal.processors.cache.query.GridCacheQueryManager.store(GridCacheQueryManager.java:404)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.finishUpdate(IgniteCacheOffheapManagerImpl.java:2637)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke0(IgniteCacheOffheapManagerImpl.java:1650)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke(IgniteCacheOffheapManagerImpl.java:1625)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl.invoke(IgniteCacheOffheapManagerImpl.java:428)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerUpdate(GridCacheMapEntry.java:2295)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateSingle(GridDhtAtomicCache.java:2494)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update(GridDhtAtomicCache.java:1951)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1780)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+	at org.apache.ignite.internal.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+	at org.apache.ignite.internal.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at org.apache.ignite.internal.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1302)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.lockInterruptibly(ReentrantReadWriteLock.java:772)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:295)
+	... 36 more
+[2019-11-23 13:58:16,224][ERROR][data-streamer-stripe-1-#10][GridDhtAtomicCache] <ScalarCachePopularNumbersExample$> Unexpected exception during cache update
+class org.apache.ignite.IgniteInterruptedException: Thread got interrupted while trying to acquire table lock.
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:308)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.update(GridH2Table.java:456)
+	at org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing.store(IgniteH2Indexing.java:768)
+	at org.apache.ignite.internal.processors.query.GridQueryProcessor.store(GridQueryProcessor.java:1902)
+	at org.apache.ignite.internal.processors.cache.query.GridCacheQueryManager.store(GridCacheQueryManager.java:404)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.finishUpdate(IgniteCacheOffheapManagerImpl.java:2637)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke0(IgniteCacheOffheapManagerImpl.java:1650)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke(IgniteCacheOffheapManagerImpl.java:1625)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl.invoke(IgniteCacheOffheapManagerImpl.java:428)
+	at org.apache.ignite.internal.processors.cache.GridCacheMapEntry.innerUpdate(GridCacheMapEntry.java:2295)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateSingle(GridDhtAtomicCache.java:2494)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update(GridDhtAtomicCache.java:1951)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1780)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+	at org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+	at org.apache.ignite.internal.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+	at org.apache.ignite.internal.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+	at org.apache.ignite.internal.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+	at org.apache.ignite.internal.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+	at org.apache.ignite.internal.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at org.apache.ignite.internal.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1302)
+	at java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock.lockInterruptibly(ReentrantReadWriteLock.java:772)
+	at org.apache.ignite.internal.processors.query.h2.opt.GridH2Table.lock(GridH2Table.java:295)
+	... 36 more
+[2019-11-23 13:58:16,236][INFO ][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], mvccCrd=MvccCoordinator [nodeId=90a738cb-8a0a-4428-aa3f-a66772b811f5, crdVer=1574513889358, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=0]], mvccCrdChange=false, crd=true, evt=DISCOVERY_CUSTOM_EVT, evtNode=90a738cb-8a0a-4428-aa3f-a66772b811f5, customEvt=DynamicCacheChangeBatch [id=3394b589e61-ec92628d-50df-427c-b52f-cbc167331e89, reqs=[DynamicCacheChangeRequest [cacheName=ScalarCachePopularNumbersExample$, hasCfg=false, nodeId=90a738cb-8a0a-4428-aa3f-a66772b811f5, clientStartOnly=false, stop=true, destroy=false, disabledAfterStartfalse]], exchangeActions=ExchangeActions [startCaches=null, stopCaches=[ScalarCachePopularNumbersExample$], startGrps=[], stopGrps=[ScalarCachePopularNumbersExample$, destroy=true], resetParts=null, stateChangeRequest=null], startCaches=false], allowMerge=false]
+[2019-11-23 13:58:16,232][INFO ][Thread-2][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[2019-11-23 13:58:16,241][INFO ][exchange-worker-#43][CacheAffinitySharedManager] Updating caches registry performed in 0 ms.
+[2019-11-23 13:58:16,249][INFO ][exchange-worker-#43][CacheAffinitySharedManager] Caches starting performed in 1 ms.
+[2019-11-23 13:58:16,249][INFO ][exchange-worker-#43][CacheAffinitySharedManager] Affinity initialization for started caches performed in 0 ms.
+[2019-11-23 13:58:16,251][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], waitTime=0ms, futInfo=NA, mode=DISTRIBUTED]
+[2019-11-23 13:58:16,251][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partitions release latch: ServerLatch [permits=0, pendingAcks=[], super=CompletableLatch [id=exchange, topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2]]]
+[2019-11-23 13:58:16,251][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finished waiting for partition release future [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], waitTime=0ms, futInfo=NA, mode=LOCAL]
+[2019-11-23 13:58:16,252][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], resVer=null, err=class org.apache.ignite.internal.IgniteInterruptedCheckedException: Thread is interrupted: IgniteThread [compositeRwLockIdx=1, stripe=-1, plc=-1, executingEntryProcessor=false, holdsTopLock=false, name=exchange-worker-#43]]
+[2019-11-23 13:58:16,252][INFO ][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=90a738cb-8a0a-4428-aa3f-a66772b811f5, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=1, minorTopVer=2], evt=DISCOVERY_CUSTOM_EVT, evtNode=TcpDiscoveryNode [id=90a738cb-8a0a-4428-aa3f-a66772b811f5, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.16.2.60], sockAddrs=[/172.16.2.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1574513888102, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=null, durationFromInit=21]
+[2019-11-23 13:58:16,260][WARN ][data-streamer-stripe-7-#16][FailureProcessor] Thread dump at 2019/11/23 13:58:16 CET
+Thread [name="Thread-2", id=67, state=RUNNABLE, blockCnt=0, waitCnt=3]
+        at o.a.i.i.util.IgniteUtils.cast(IgniteUtils.java:7432)
+        at o.a.i.i.util.future.GridFutureAdapter.resolve(GridFutureAdapter.java:261)
+        at o.a.i.i.util.future.GridFutureAdapter.get0(GridFutureAdapter.java:172)
+        at o.a.i.i.util.future.GridFutureAdapter.get(GridFutureAdapter.java:141)
+        at o.a.i.i.util.future.GridCompoundFuture.apply(GridCompoundFuture.java:92)
+        at o.a.i.i.util.future.GridCompoundFuture.apply(GridCompoundFuture.java:45)
+        at o.a.i.i.util.future.GridFutureAdapter.notifyListener(GridFutureAdapter.java:385)
+        at o.a.i.i.util.future.GridFutureAdapter.unblock(GridFutureAdapter.java:349)
+        at o.a.i.i.util.future.GridFutureAdapter.unblockAll(GridFutureAdapter.java:337)
+        at o.a.i.i.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:497)
+        at o.a.i.i.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:476)
+        at o.a.i.i.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:464)
+        at o.a.i.i.processors.datastreamer.DataStreamerImpl$Buffer$2.apply(DataStreamerImpl.java:1818)
+        at o.a.i.i.processors.datastreamer.DataStreamerImpl$Buffer$2.apply(DataStreamerImpl.java:1808)
+        at o.a.i.i.util.future.GridFutureAdapter.notifyListener(GridFutureAdapter.java:385)
+        at o.a.i.i.util.future.GridFutureAdapter.unblock(GridFutureAdapter.java:349)
+        at o.a.i.i.util.future.GridFutureAdapter.unblockAll(GridFutureAdapter.java:337)
+        at o.a.i.i.util.future.GridFutureAdapter.onDone(GridFutureAdapter.java:497)
+        at o.a.i.i.util.future.GridFutureAdapter.onCancelled(GridFutureAdapter.java:525)
+        at o.a.i.i.util.worker.GridWorkerFuture.cancel(GridWorkerFuture.java:34)
+        at o.a.i.i.processors.datastreamer.DataStreamerImpl$Buffer.cancelAll(DataStreamerImpl.java:2078)
+        at o.a.i.i.processors.datastreamer.DataStreamerImpl.closeEx(DataStreamerImpl.java:1335)
+        at o.a.i.i.processors.datastreamer.DataStreamerImpl.closeEx(DataStreamerImpl.java:1296)
+        at o.a.i.i.processors.datastreamer.DataStreamProcessor.onKernalStop(DataStreamProcessor.java:155)
+        at o.a.i.i.IgniteKernal.stop0(IgniteKernal.java:2280)
+        at o.a.i.i.IgniteKernal.stop(IgniteKernal.java:2228)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance.stop0(IgnitionEx.java:2617)
+        - locked o.a.i.i.IgnitionEx$IgniteNamedInstance@5e4d7dfd
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance.stop(IgnitionEx.java:2580)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance$6.run(IgnitionEx.java:2100)
+
+Thread [name="SIGTERM handler", id=70, state=WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=o.a.i.i.IgnitionEx$IgniteNamedInstance$6@32639b12, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.lang.Thread.join(Thread.java:1252)
+        at java.lang.Thread.join(Thread.java:1326)
+        at java.lang.ApplicationShutdownHooks.runHooks(ApplicationShutdownHooks.java:107)
+        at java.lang.ApplicationShutdownHooks$1.run(ApplicationShutdownHooks.java:46)
+        at java.lang.Shutdown.runHooks(Shutdown.java:123)
+        at java.lang.Shutdown.sequence(Shutdown.java:167)
+        at java.lang.Shutdown.exit(Shutdown.java:212)
+        - locked java.lang.Class@2bf505c6
+        at java.lang.Terminator$1.handle(Terminator.java:52)
+        at sun.misc.Signal$1.run(Signal.java:212)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="numbers-query-worker", id=69, state=TIMED_WAITING, blockCnt=1, waitCnt=15]
+    Lock [object=java.util.TaskQueue@796c3de1, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.util.TimerThread.mainLoop(Timer.java:552)
+        at java.util.TimerThread.run(Timer.java:505)
+
+Thread [name="ttl-cleanup-worker-#45", id=68, state=TIMED_WAITING, blockCnt=0, waitCnt=13]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.util.IgniteUtils.sleep(IgniteUtils.java:7778)
+        at o.a.i.i.processors.cache.GridCacheSharedTtlCleanupManager$CleanupWorker.body(GridCacheSharedTtlCleanupManager.java:149)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="session-timeout-worker-#34", id=50, state=TIMED_WAITING, blockCnt=0, waitCnt=7]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.processors.rest.GridRestProcessor$4.body(GridRestProcessor.java:495)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="srvc-deploy-#44", id=66, state=WAITING, blockCnt=1, waitCnt=2]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@29551824, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+        at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="exchange-worker-#43", id=65, state=TIMED_WAITING, blockCnt=4, waitCnt=3]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1cc22a66, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:522)
+        at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:684)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager$ExchangeWorker.body0(GridCachePartitionExchangeManager.java:2626)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager$ExchangeWorker.body(GridCachePartitionExchangeManager.java:2553)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="ignite-update-notifier-timer", id=64, state=TIMED_WAITING, blockCnt=1, waitCnt=2]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.processors.cluster.ClusterProcessor$UpdateNotifierTimerTask.safeRun(ClusterProcessor.java:681)
+        at o.a.i.i.util.GridTimerTask.run(GridTimerTask.java:34)
+        at java.util.TimerThread.mainLoop(Timer.java:555)
+        at java.util.TimerThread.run(Timer.java:505)
+
+Thread [name="upd-ver-checker", id=63, state=RUNNABLE, blockCnt=0, waitCnt=1]
+        at java.net.SocketInputStream.socketRead0(Native Method)
+        at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+        at java.net.SocketInputStream.read(SocketInputStream.java:171)
+        at java.net.SocketInputStream.read(SocketInputStream.java:141)
+        at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+        at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+        at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+        - locked java.lang.Object@1f1ac70d
+        at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+        at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+        - locked sun.security.ssl.AppInputStream@701723a
+        at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+        at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+        at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+        - locked java.io.BufferedInputStream@614cec6
+        at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735)
+        at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
+        at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+        - locked sun.net.www.protocol.https.DelegateHttpsURLConnection@b884578
+        at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+        - locked sun.net.www.protocol.https.DelegateHttpsURLConnection@b884578
+        at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:263)
+        - locked sun.net.www.protocol.https.HttpsURLConnectionImpl@4263c9ab
+        at o.a.i.i.processors.cluster.HttpIgniteUpdatesChecker.getUpdates(HttpIgniteUpdatesChecker.java:65)
+        at o.a.i.i.processors.cluster.GridUpdateNotifier$UpdateChecker.body(GridUpdateNotifier.java:268)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.i.processors.cluster.GridUpdateNotifier$1.run(GridUpdateNotifier.java:113)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="disco-event-worker-#42", id=62, state=WAITING, blockCnt=1, waitCnt=6]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4e7fe37f, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+        at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryWorker.body0(GridDiscoveryManager.java:2856)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryWorker.body(GridDiscoveryManager.java:2825)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="tcp-disco-ip-finder-cleaner-#5", id=61, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.spi.discovery.tcp.ServerImpl$IpFinderCleaner.body(ServerImpl.java:1960)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="tcp-disco-multicast-addr-sender-#4", id=60, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at java.net.PlainDatagramSocketImpl.receive0(Native Method)
+        - locked java.net.PlainDatagramSocketImpl@6ebd7688
+        at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+        - locked java.net.PlainDatagramSocketImpl@6ebd7688
+        at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+        - locked java.net.DatagramPacket@27574da2
+        - locked java.net.MulticastSocket@7ba5e672
+        at o.a.i.spi.discovery.tcp.ipfinder.multicast.TcpDiscoveryMulticastIpFinder$AddressSender.body(TcpDiscoveryMulticastIpFinder.java:882)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="tcp-disco-srvr-#3", id=59, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at java.net.PlainSocketImpl.socketAccept(Native Method)
+        at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+        at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+        at java.net.ServerSocket.accept(ServerSocket.java:513)
+        at o.a.i.spi.discovery.tcp.ServerImpl$TcpServer.body(ServerImpl.java:5845)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.spi.discovery.tcp.ServerImpl$TcpServerThread.body(ServerImpl.java:5763)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="tcp-disco-msg-worker-#2", id=58, state=TIMED_WAITING, blockCnt=1, waitCnt=758]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4a709662, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:522)
+        at java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:684)
+        at o.a.i.spi.discovery.tcp.ServerImpl$MessageWorker.body(ServerImpl.java:7183)
+        at o.a.i.spi.discovery.tcp.ServerImpl$RingMessageWorker.body(ServerImpl.java:2700)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.spi.discovery.tcp.ServerImpl$MessageWorkerThread.body(ServerImpl.java:7119)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="disco-notifier-worker-#41", id=57, state=WAITING, blockCnt=3, waitCnt=6]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4f7cb092, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+        at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryMessageNotifierWorker.body0(GridDiscoveryManager.java:2660)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryMessageNotifierWorker.body(GridDiscoveryManager.java:2705)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-rest-3-#38", id=54, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@525bce82
+        - locked java.util.Collections$UnmodifiableSet@69934cd
+        - locked sun.nio.ch.EPollSelectorImpl@481461fa
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-rest-2-#37", id=53, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@62c6a04a
+        - locked java.util.Collections$UnmodifiableSet@6ee54d4e
+        - locked sun.nio.ch.EPollSelectorImpl@21953303
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-rest-1-#36", id=52, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@4ae58d7a
+        - locked java.util.Collections$UnmodifiableSet@1df6a09c
+        - locked sun.nio.ch.EPollSelectorImpl@59bd1151
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-rest-0-#35", id=51, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@51b82c4e
+        - locked java.util.Collections$UnmodifiableSet@37d0e55e
+        - locked sun.nio.ch.EPollSelectorImpl@1f8a5178
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="nio-acceptor-tcp-rest-#39", id=55, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked sun.nio.ch.Util$3@2e8cec41
+        - locked java.util.Collections$UnmodifiableSet@3e467f82
+        - locked sun.nio.ch.EPollSelectorImpl@e0c8701
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.accept(GridNioServer.java:2926)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.body(GridNioServer.java:2874)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-3-#32", id=48, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@43c01629
+        - locked java.util.Collections$UnmodifiableSet@ae704f4
+        - locked sun.nio.ch.EPollSelectorImpl@7d0d045
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-2-#31", id=47, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@6d8e7b31
+        - locked java.util.Collections$UnmodifiableSet@2e3c49f7
+        - locked sun.nio.ch.EPollSelectorImpl@1cce2860
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-1-#30", id=46, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@1d9d8144
+        - locked java.util.Collections$UnmodifiableSet@3542635
+        - locked sun.nio.ch.EPollSelectorImpl@4febb459
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-0-#29", id=45, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@220b18ec
+        - locked java.util.Collections$UnmodifiableSet@536d2a48
+        - locked sun.nio.ch.EPollSelectorImpl@712adb9e
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="nio-acceptor-client-listener-#33", id=49, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked sun.nio.ch.Util$3@6371f09e
+        - locked java.util.Collections$UnmodifiableSet@19c75864
+        - locked sun.nio.ch.EPollSelectorImpl@23421e7e
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.accept(GridNioServer.java:2926)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.body(GridNioServer.java:2874)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="tcp-comm-worker-#1", id=44, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@413c7a3, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at o.a.i.spi.communication.tcp.TcpCommunicationSpi$CommunicationWorker.body(TcpCommunicationSpi.java:4287)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.spi.communication.tcp.TcpCommunicationSpi$5.body(TcpCommunicationSpi.java:2237)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="grid-nio-worker-tcp-comm-3-#27", id=39, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@688a22bf
+        - locked java.util.Collections$UnmodifiableSet@4b2d43b2
+        - locked sun.nio.ch.EPollSelectorImpl@78af1547
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-2-#26", id=38, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@629beb2e
+        - locked java.util.Collections$UnmodifiableSet@5bbda218
+        - locked sun.nio.ch.EPollSelectorImpl@7aac5a0e
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-1-#25", id=37, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@7aa96d31
+        - locked java.util.Collections$UnmodifiableSet@47d62bd1
+        - locked sun.nio.ch.EPollSelectorImpl@714dec51
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-0-#24", id=36, state=RUNNABLE, blockCnt=1, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@69a9b45c
+        - locked java.util.Collections$UnmodifiableSet@58d88cbd
+        - locked sun.nio.ch.EPollSelectorImpl@2ea6acd4
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2148)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1794)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="nio-acceptor-tcp-comm-#28", id=43, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked sun.nio.ch.Util$3@3097f235
+        - locked java.util.Collections$UnmodifiableSet@1438bb2f
+        - locked sun.nio.ch.EPollSelectorImpl@8196071
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.accept(GridNioServer.java:2926)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.body(GridNioServer.java:2874)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-timeout-worker-#23", id=35, state=TIMED_WAITING, blockCnt=2, waitCnt=25]
+    Lock [object=java.lang.Object@1342bdaa, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at o.a.i.i.processors.timeout.GridTimeoutProcessor$TimeoutWorker.body(GridTimeoutProcessor.java:269)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="ignite-clock", id=34, state=TIMED_WAITING, blockCnt=0, waitCnt=904]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.util.IgniteUtils$22.run(IgniteUtils.java:3383)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#22", id=33, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1c4be3ad, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#21", id=32, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1c4be3ad, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#20", id=31, state=TIMED_WAITING, blockCnt=1, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1c4be3ad, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#19", id=30, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1c4be3ad, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#18", id=29, state=TIMED_WAITING, blockCnt=1, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1c4be3ad, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#17", id=28, state=TIMED_WAITING, blockCnt=2, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1c4be3ad, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="jvm-pause-detector-worker", id=27, state=TIMED_WAITING, blockCnt=0, waitCnt=190]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.LongJVMPauseDetector$1.run(LongJVMPauseDetector.java:100)
+
+Thread [name="data-streamer-stripe-7-#16", id=26, state=RUNNABLE, blockCnt=0, waitCnt=2450]
+        at sun.management.ThreadImpl.dumpThreads0(Native Method)
+        at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+        at o.a.i.i.util.IgniteUtils.dumpThreads(IgniteUtils.java:1368)
+        at o.a.i.i.processors.failure.FailureProcessor.process(FailureProcessor.java:128)
+        - locked o.a.i.i.processors.failure.FailureProcessor@4d7bc2c8
+        at o.a.i.i.processors.failure.FailureProcessor.process(FailureProcessor.java:104)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance$4.apply(IgnitionEx.java:1896)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance$4.apply(IgnitionEx.java:1893)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:528)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-6-#15", id=25, state=RUNNABLE, blockCnt=19, waitCnt=2885]
+        at o.a.i.i.processors.cache.CacheObjectUtils.unwrapBinary(CacheObjectUtils.java:173)
+        at o.a.i.i.processors.cache.CacheObjectUtils.unwrapBinaryIfNeeded(CacheObjectUtils.java:67)
+        at o.a.i.i.processors.cache.CacheObjectContext.unwrapBinaryIfNeeded(CacheObjectContext.java:125)
+        at o.a.i.i.processors.cache.GridCacheEventManager.addEvent(GridCacheEventManager.java:305)
+        at o.a.i.i.processors.cache.GridCacheMapEntry.innerUpdate(GridCacheMapEntry.java:2391)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateSingle(GridDhtAtomicCache.java:2494)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update(GridDhtAtomicCache.java:1951)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1780)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+        at o.a.i.i.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+        at o.a.i.i.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+        at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+        at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+        at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+        at o.a.i.i.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+        at o.a.i.i.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+        at o.a.i.i.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+    Locked synchronizers:
+        java.util.concurrent.locks.ReentrantLock$NonfairSync@e2229fe
+Thread [name="data-streamer-stripe-5-#14", id=24, state=RUNNABLE, blockCnt=0, waitCnt=2621]
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture$1.apply(GridNearAtomicAbstractUpdateFuture.java:303)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture$1.apply(GridNearAtomicAbstractUpdateFuture.java:300)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1856)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+        at o.a.i.i.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+        at o.a.i.i.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+        at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+        at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+        at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+        at o.a.i.i.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+        at o.a.i.i.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+        at o.a.i.i.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-4-#13", id=23, state=RUNNABLE, blockCnt=18, waitCnt=2661]
+        at o.a.i.i.processors.cache.CacheObjectContext.unwrapBinaryIfNeeded(CacheObjectContext.java:125)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.onPrimaryError(GridNearAtomicAbstractUpdateFuture.java:404)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.onPrimaryResponse(GridNearAtomicSingleUpdateFuture.java:253)
+        - locked o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture@88b7a7d
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture$1.apply(GridNearAtomicAbstractUpdateFuture.java:303)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture$1.apply(GridNearAtomicAbstractUpdateFuture.java:300)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1856)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+        at o.a.i.i.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+        at o.a.i.i.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+        at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+        at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+        at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+        at o.a.i.i.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+        at o.a.i.i.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+        at o.a.i.i.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-3-#12", id=22, state=RUNNABLE, blockCnt=6, waitCnt=2641]
+        at o.a.i.i.processors.query.h2.IgniteH2Indexing.store(IgniteH2Indexing.java:768)
+        at o.a.i.i.processors.query.GridQueryProcessor.store(GridQueryProcessor.java:1902)
+        at o.a.i.i.processors.cache.query.GridCacheQueryManager.store(GridCacheQueryManager.java:404)
+        at o.a.i.i.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.finishUpdate(IgniteCacheOffheapManagerImpl.java:2637)
+        at o.a.i.i.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke0(IgniteCacheOffheapManagerImpl.java:1650)
+        at o.a.i.i.processors.cache.IgniteCacheOffheapManagerImpl$CacheDataStoreImpl.invoke(IgniteCacheOffheapManagerImpl.java:1625)
+        at o.a.i.i.processors.cache.IgniteCacheOffheapManagerImpl.invoke(IgniteCacheOffheapManagerImpl.java:428)
+        at o.a.i.i.processors.cache.GridCacheMapEntry.innerUpdate(GridCacheMapEntry.java:2295)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateSingle(GridDhtAtomicCache.java:2494)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update(GridDhtAtomicCache.java:1951)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1780)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+        at o.a.i.i.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+        at o.a.i.i.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+        at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+        at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+        at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+        at o.a.i.i.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+        at o.a.i.i.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+        at o.a.i.i.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+    Locked synchronizers:
+        java.util.concurrent.locks.ReentrantLock$NonfairSync@4b9eb64a
+Thread [name="data-streamer-stripe-2-#11", id=21, state=RUNNABLE, blockCnt=10, waitCnt=2382]
+        at java.util.concurrent.ConcurrentHashMap.isEmpty(ConcurrentHashMap.java:920)
+        at o.a.i.i.processors.cache.transactions.IgniteTxManager.lockedTopologyVersion(IgniteTxManager.java:762)
+        at o.a.i.i.processors.cache.GridCacheSharedContext.lockedTopologyVersion(GridCacheSharedContext.java:985)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:245)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+        at o.a.i.i.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+        at o.a.i.i.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+        at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+        at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+        at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+        at o.a.i.i.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+        at o.a.i.i.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+        at o.a.i.i.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-1-#10", id=20, state=RUNNABLE, blockCnt=9, waitCnt=2619]
+        at o.a.i.i.util.lang.IgniteClosureX.apply(IgniteClosureX.java:38)
+        at o.a.i.i.util.future.GridFutureChainListener.applyCallback(GridFutureChainListener.java:78)
+        at o.a.i.i.util.future.GridFutureChainListener.apply(GridFutureChainListener.java:70)
+        at o.a.i.i.util.future.GridFutureChainListener.apply(GridFutureChainListener.java:30)
+        at o.a.i.i.util.future.GridFutureAdapter.notifyListener(GridFutureAdapter.java:385)
+        at o.a.i.i.util.future.GridFutureAdapter.listen(GridFutureAdapter.java:355)
+        at o.a.i.i.util.future.GridFutureAdapter$ChainFuture.<init>(GridFutureAdapter.java:574)
+        at o.a.i.i.util.future.GridFutureAdapter.chain(GridFutureAdapter.java:360)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:842)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+        at o.a.i.i.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+        at o.a.i.i.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+        at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+        at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+        at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+        at o.a.i.i.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+        at o.a.i.i.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+        at o.a.i.i.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-0-#9", id=19, state=RUNNABLE, blockCnt=1, waitCnt=2653]
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture$1.apply(GridNearAtomicAbstractUpdateFuture.java:303)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture$1.apply(GridNearAtomicAbstractUpdateFuture.java:300)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicAbstractUpdateFuture.map(GridDhtAtomicAbstractUpdateFuture.java:394)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal0(GridDhtAtomicCache.java:1874)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.updateAllAsyncInternal(GridDhtAtomicCache.java:1668)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.sendSingleRequest(GridNearAtomicAbstractUpdateFuture.java:299)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.map(GridNearAtomicSingleUpdateFuture.java:483)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicSingleUpdateFuture.mapOnTopology(GridNearAtomicSingleUpdateFuture.java:443)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridNearAtomicAbstractUpdateFuture.map(GridNearAtomicAbstractUpdateFuture.java:248)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.update0(GridDhtAtomicCache.java:1153)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke0(GridDhtAtomicCache.java:833)
+        at o.a.i.i.processors.cache.distributed.dht.atomic.GridDhtAtomicCache.invoke(GridDhtAtomicCache.java:789)
+        at o.a.i.i.processors.cache.IgniteCacheProxyImpl.invoke(IgniteCacheProxyImpl.java:1438)
+        at o.a.i.i.processors.cache.GatewayProtectedCacheProxy.invoke(GatewayProtectedCacheProxy.java:1204)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater$$anonfun$receive$1.apply(PopularNr.scala:130)
+        at scala.collection.Iterator$class.foreach(Iterator.scala:891)
+        at scala.collection.AbstractIterator.foreach(Iterator.scala:1334)
+        at scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+        at scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+        at ScalarCachePopularNumbersExample$IncrementingUpdater.receive(PopularNr.scala:130)
+        at o.a.i.i.processors.datastreamer.DataStreamerUpdateJob.call(DataStreamerUpdateJob.java:137)
+        at o.a.i.i.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6820)
+        at o.a.i.i.processors.closure.GridClosureProcessor$2.body(GridClosureProcessor.java:967)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:505)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-7-#8", id=18, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-6-#7", id=17, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-5-#6", id=16, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-4-#5", id=15, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-3-#4", id=14, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-2-#3", id=13, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-1-#2", id=12, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-0-#1", id=11, state=WAITING, blockCnt=1, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:668)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="FileWatchdog", id=9, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+        at java.lang.Thread.sleep(Native Method)
+        at org.apache.log4j.helpers.FileWatchdog.run(FileWatchdog.java:104)
+
+Thread [name="Signal Dispatcher", id=4, state=RUNNABLE, blockCnt=0, waitCnt=0]
+
+Thread [name="Finalizer", id=3, state=WAITING, blockCnt=361, waitCnt=14]
+    Lock [object=java.lang.ref.ReferenceQueue$Lock@58e04073, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+        at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+Thread [name="Reference Handler", id=2, state=WAITING, blockCnt=12, waitCnt=13]
+    Lock [object=java.lang.ref.Reference$Lock@4712ef48, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.lang.Object.wait(Object.java:502)
+        at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+        at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+Thread [name="main", id=1, state=TIMED_WAITING, blockCnt=3, waitCnt=92]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.util.GridSpinReadWriteLock.readLock(GridSpinReadWriteLock.java:97)
+        at o.a.i.i.processors.datastreamer.DataStreamerImpl.lock(DataStreamerImpl.java:435)
+        at o.a.i.i.processors.datastreamer.DataStreamerImpl.addDataInternal(DataStreamerImpl.java:643)
+        at o.a.i.i.processors.datastreamer.DataStreamerImpl.addDataInternal(DataStreamerImpl.java:628)
+        at o.a.i.i.processors.datastreamer.DataStreamerImpl.addData(DataStreamerImpl.java:750)
+        at ScalarCachePopularNumbersExample$$anonfun$streamData$1.apply(PopularNr.scala:94)
+        at ScalarCachePopularNumbersExample$$anonfun$streamData$1.apply(PopularNr.scala:94)
+        at scala.collection.immutable.Range.foreach(Range.scala:160)
+        at ScalarCachePopularNumbersExample$.streamData(PopularNr.scala:94)
+        at ScalarCachePopularNumbersExample$$anonfun$1.apply$mcV$sp(PopularNr.scala:67)
+        at ScalarCachePopularNumbersExample$$anonfun$1.apply(PopularNr.scala:49)
+        at ScalarCachePopularNumbersExample$$anonfun$1.apply(PopularNr.scala:49)
+        at o.a.i.s.scalar$.init0(scalar.scala:181)
+        at o.a.i.s.scalar$.apply(scalar.scala:237)
+        at ScalarCachePopularNumbersExample$.delayedEndpoint$ScalarCachePopularNumbersExample$1(PopularNr.scala:49)
+        at ScalarCachePopularNumbersExample$delayedInit$body.apply(PopularNr.scala:29)
+        at scala.Function0$class.apply$mcV$sp(Function0.scala:34)
+        at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
+        at scala.App$$anonfun$main$1.apply(App.scala:76)
+        at scala.App$$anonfun$main$1.apply(App.scala:76)
+        at scala.collection.immutable.List.foreach(List.scala:392)
+        at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:35)
+        at scala.App$class.main(App.scala:76)
+        at ScalarCachePopularNumbersExample$.main(PopularNr.scala:29)
+        at ScalarCachePopularNumbersExample.main(PopularNr.scala)
+
+
+
+[2019-11-23 13:58:16,261][ERROR][data-streamer-stripe-7-#16][root] JVM will be halted immediately due to the failure: [failureCtx=FailureContext [type=SYSTEM_WORKER_TERMINATION, err=java.lang.IllegalStateException: Thread data-streamer-stripe-7-#16 is terminated unexpectedly]]
+[2019-11-23 13:58:16,264][INFO ][Thread-2][GridCacheProcessor] Stopped cache [cacheName=ignite-sys-cache]

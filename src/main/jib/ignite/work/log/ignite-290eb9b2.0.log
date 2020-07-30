@@ -1,0 +1,411 @@
+[17:32:38,423][WARNING][main][G] Ignite work directory is not provided, automatically resolved to: /home/xshaini/apache-ignite-2.7.5-bin/work
+[17:32:38,648][INFO][main][IgniteKernal] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.7.6#20190911-sha1:21f7ca41
+>>> 2019 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[17:32:38,656][INFO][main][IgniteKernal] Config URL: file:/home/xshaini/apache-ignite-2.7.5-bin/examples/config/example-ignite.xml
+[17:32:38,675][INFO][main][IgniteKernal] IgniteConfiguration [igniteInstanceName=null, pubPoolSize=8, svcPoolSize=8, callbackPoolSize=8, stripedPoolSize=8, sysPoolSize=8, mgmtPoolSize=4, igfsPoolSize=4, dataStreamerPoolSize=8, utilityCachePoolSize=8, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=8, igniteHome=/home/xshaini/apache-ignite-2.7.5-bin, igniteWorkDir=/home/xshaini/apache-ignite-2.7.5-bin/work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@6b4a4e18, nodeId=290eb9b2-d1e6-4050-941e-2c98d797d585, marsh=BinaryMarshaller [], marshLocJobs=false, daemon=false, p2pEnabled=true, netTimeout=5000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$FirstConnectionPolicy@7dcf94f8, enableForcibleNodeKill=false, enableTroubleshootingLog=false, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=4, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@229f66ed[Count = 1], stopping=false], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@31190526, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@77c2494c, addrRslvr=null, encryptionSpi=org.apache.ignite.spi.encryption.noop.NoopEncryptionSpi@f5958c9, clientMode=false, rebalanceThreadPoolSize=1, txCfg=TransactionConfiguration [txSerEnabled=false, dfltIsolation=REPEATABLE_READ, dfltConcurrency=PESSIMISTIC, dfltTxTimeout=0, txTimeoutOnPartitionMapExchange=0, pessimisticTxLogSize=0, pessimisticTxLogLinger=10000, tmLookupClsName=null, txManagerFactory=null, useJtaSync=false], cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, sysWorkerBlockedTimeout=null, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=ConnectorConfiguration [jettyPath=null, host=null, port=11211, noDelay=true, directBuf=false, sndBufSize=32768, rcvBufSize=32768, idleQryCurTimeout=600000, idleQryCurCheckFreq=60000, sndQueueLimit=0, selectorCnt=4, idleTimeout=7000, sslEnabled=false, sslClientAuth=false, sslCtxFactory=null, sslFactory=null, portRange=100, threadPoolSize=8, msgInterceptor=null], odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=DataStorageConfiguration [sysRegionInitSize=41943040, sysRegionMaxSize=104857600, pageSize=0, concLvl=0, dfltDataRegConf=DataRegionConfiguration [name=default, maxSize=3335263846, initSize=268435456, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=false, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=false, checkpointPageBufSize=0], dataRegions=null, storagePath=null, checkpointFreq=180000, lockWaitTime=10000, checkpointThreads=4, checkpointWriteOrder=SEQUENTIAL, walHistSize=20, maxWalArchiveSize=1073741824, walSegments=10, walSegmentSize=67108864, walPath=db/wal, walArchivePath=db/wal/archive, metricsEnabled=false, walMode=LOG_ONLY, walTlbSize=131072, walBuffSize=0, walFlushFreq=2000, walFsyncDelay=1000, walRecordIterBuffSize=67108864, alwaysWriteFullPages=false, fileIOFactory=org.apache.ignite.internal.processors.cache.persistence.file.AsyncFileIOFactory@1fa121e2, metricsSubIntervalCnt=5, metricsRateTimeInterval=60000, walAutoArchiveAfterInactivity=-1, writeThrottlingEnabled=false, walCompactionEnabled=false, walCompactionLevel=1, checkpointReadLockTimeout=null], activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=8, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], mvccVacuumThreadCnt=2, mvccVacuumFreq=5000, authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[17:32:38,676][INFO][main][IgniteKernal] Daemon mode: off
+[17:32:38,676][INFO][main][IgniteKernal] OS: Linux 4.15.0-74-generic amd64
+[17:32:38,676][INFO][main][IgniteKernal] OS user: xshaini
+[17:32:38,677][INFO][main][IgniteKernal] PID: 8611
+[17:32:38,678][INFO][main][IgniteKernal] Language runtime: Scala ver. 2.11.11
+[17:32:38,678][INFO][main][IgniteKernal] VM information: Java(TM) SE Runtime Environment 1.8.0_211-b12 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.211-b12
+[17:32:38,680][INFO][main][IgniteKernal] VM total memory: 3.5GB
+[17:32:38,680][INFO][main][IgniteKernal] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[17:32:38,680][INFO][main][IgniteKernal] Logger: JavaLogger [quiet=true, config=null]
+[17:32:38,680][INFO][main][IgniteKernal] IGNITE_HOME=/home/xshaini/apache-ignite-2.7.5-bin
+[17:32:38,680][INFO][main][IgniteKernal] VM arguments: [-Dfile.encoding=UTF-8, -Xbootclasspath/p:/home/xshaini/scala-SDK-4.7.0/eclipse/plugins/org.scala-ide.scala211.jars_4.7.0.201709291351/target/jars/scala-library.jar:/home/xshaini/scala-SDK-4.7.0/eclipse/plugins/org.scala-ide.scala211.jars_4.7.0.201709291351/target/jars/scala-reflect.jar]
+[17:32:38,680][INFO][main][IgniteKernal] System cache's DataRegion size is configured to 40 MB. Use DataStorageConfiguration.systemRegionInitialSize property to change the setting.
+[17:32:38,689][INFO][main][IgniteKernal] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[17:32:38,689][WARNING][main][IgniteKernal] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[17:32:38,690][WARNING][main][IgniteKernal] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[17:32:38,695][WARNING][pub-#18][GridDiagnostic] Default local host is a loopback address. This can be a sign of potential network configuration problem.
+[17:32:38,696][WARNING][pub-#20][GridDiagnostic] No live network interfaces detected. If IP-multicast discovery is used - make sure to add 127.0.0.1 as a local address.
+[17:32:38,696][INFO][main][IgniteKernal] 3-rd party licenses can be found at: /home/xshaini/apache-ignite-2.7.5-bin/libs/licenses
+[17:32:38,698][WARNING][pub-#22][GridDiagnostic] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[17:32:38,785][INFO][main][IgnitePluginProcessor] Configured plugins:
+[17:32:38,785][INFO][main][IgnitePluginProcessor]   ^-- None
+[17:32:38,785][INFO][main][IgnitePluginProcessor] 
+[17:32:38,788][INFO][main][FailureProcessor] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=[SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[17:32:38,876][INFO][main][TcpCommunicationSpi] Successfully bound communication NIO server to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0, selectorsCnt=4, selectorSpins=0, pairedConn=false]
+[17:32:38,884][WARNING][main][TcpCommunicationSpi] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[17:32:38,912][WARNING][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[17:32:38,950][WARNING][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[17:32:38,973][INFO][main][IgniteKernal] Security status [authentication=off, tls/ssl=off]
+[17:32:39,251][WARNING][main][IgniteCacheDatabaseSharedManager] DataRegionConfiguration.maxWalArchiveSize instead DataRegionConfiguration.walHistorySize would be used for removing old archive wal files
+[17:32:39,269][INFO][main][PartitionsEvictManager] Evict partition permits=2
+[17:32:39,451][INFO][main][ClientListenerProcessor] Client connector processor has started on TCP port 10801
+[17:32:39,497][INFO][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+[17:32:39,536][INFO][main][IgniteKernal] Non-loopback local IPs: N/A
+[17:32:39,536][INFO][main][IgniteKernal] Enabled local MACs: N/A
+[17:32:39,536][WARNING][main][IgniteKernal] Ignite is starting on loopback address... Only nodes on the same physical computer can participate in topology.
+[17:32:39,581][INFO][main][TcpDiscoverySpi] Connection check threshold is calculated: 10000
+[17:32:39,584][INFO][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47501, localHost=0.0.0.0/0.0.0.0, locNodeId=290eb9b2-d1e6-4050-941e-2c98d797d585]
+[17:32:40,101][WARNING][main][TcpDiscoveryMulticastIpFinder] Failed to send multicast message (is multicast enabled on this node?).
+[17:32:40,242][INFO][tcp-disco-srvr-#3][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=43055]
+[17:32:40,252][INFO][tcp-disco-srvr-#3][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=43055]
+[17:32:40,253][INFO][tcp-disco-sock-reader-#6][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:43055, rmtPort=43055]
+[17:32:40,397][INFO][tcp-disco-msg-worker-#2][TcpDiscoverySpi] New next node [newNext=TcpDiscoveryNode [id=9bee6f35-4aa6-4a68-b8ea-b2b2b464da75, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.16.2.60], sockAddrs=[/172.16.2.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1580747560263, loc=false, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false]]
+[17:32:40,446][INFO][disco-notifier-worker-#41][MvccProcessorImpl] Assigned mvcc coordinator [crd=MvccCoordinator [nodeId=9bee6f35-4aa6-4a68-b8ea-b2b2b464da75, crdVer=1580741260670, topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0]], crdNode=TcpDiscoveryNode [id=9bee6f35-4aa6-4a68-b8ea-b2b2b464da75, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1, 172.16.2.60], sockAddrs=[/172.16.2.60:47500, /0:0:0:0:0:0:0:1%lo:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1580747560263, loc=false, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false]]
+[17:32:40,515][INFO][exchange-worker-#43][time] Started exchange init [topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], mvccCrd=MvccCoordinator [nodeId=9bee6f35-4aa6-4a68-b8ea-b2b2b464da75, crdVer=1580741260670, topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0]], mvccCrdChange=true, crd=false, evt=NODE_JOINED, evtNode=290eb9b2-d1e6-4050-941e-2c98d797d585, customEvt=null, allowMerge=true]
+[17:32:40,541][INFO][exchange-worker-#43][msg] Components activation performed in 25 ms.
+[17:32:40,689][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=ignite-sys-cache, id=-2100569601, memoryPolicyName=sysMemPlc, mode=REPLICATED, atomicity=TRANSACTIONAL, backups=2147483647, mvcc=false], encryptionEnabled=false]
+[17:32:40,801][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=E_embeddingscache, id=-2071898868, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[17:32:40,814][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=Entity2IDcache, id=-1974730792, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[17:32:40,820][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=R_embeddingscache, id=-1658741991, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[17:32:40,825][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=tripleHcache, id=213412376, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[17:32:40,831][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=tripleId, id=1511552537, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[17:32:40,836][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=testTriplecache, id=1589043698, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[17:32:40,841][INFO][exchange-worker-#43][GridCacheProcessor] Started cache [name=Relation2IDcache, id=1717069041, memoryPolicyName=default, mode=PARTITIONED, atomicity=ATOMIC, backups=0, mvcc=false], encryptionEnabled=false]
+[17:32:40,841][INFO][exchange-worker-#43][GridCacheProcessor] Starting caches on local join performed in 300 ms.
+[17:32:40,849][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Skipped waiting for partitions release future (local node is joining) [topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0]]
+[17:32:40,870][WARNING][exchange-worker-#43][TcpCommunicationSpi] Connect timed out (consider increasing 'failureDetectionTimeout' configuration property) [addr=/172.16.2.60:47100, failureDetectionTimeout=10000]
+[17:32:40,943][INFO][grid-nio-worker-tcp-comm-0-#24][TcpCommunicationSpi] Established outgoing communication connection [locAddr=/0:0:0:0:0:0:0:1:35846, rmtAddr=/0:0:0:0:0:0:0:1%lo:47100]
+[17:32:40,946][INFO][exchange-worker-#43][GridDhtPartitionsExchangeFuture] Sending Single Message performed in 97 ms.
+[17:32:40,946][INFO][exchange-worker-#43][time] Finished exchange init [topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], crd=false]
+[17:32:41,192][INFO][sys-#45][GridDhtPartitionsExchangeFuture] Received full message, will finish exchange [node=9bee6f35-4aa6-4a68-b8ea-b2b2b464da75, resVer=AffinityTopologyVersion [topVer=2, minorTopVer=0]]
+[17:32:41,595][INFO][sys-#45][CacheAffinitySharedManager] Affinity initialization on local join performed in 402 ms.
+[17:32:41,596][INFO][sys-#45][GridDhtPartitionsExchangeFuture] Affinity changes applied in 403 ms.
+[17:32:41,620][INFO][sys-#45][GridDhtPartitionsExchangeFuture] Full map updating for 8 groups performed in 24 ms.
+[17:32:41,620][INFO][sys-#45][GridDhtPartitionsExchangeFuture] Finish exchange future [startVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], resVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], err=null]
+[17:32:41,631][INFO][sys-#45][GridDhtPartitionsExchangeFuture] Detecting lost partitions performed in 11 ms.
+[17:32:41,693][INFO][sys-#45][GridCacheProcessor] Finish proxy initialization, cacheName=tripleHcache, localNodeId=290eb9b2-d1e6-4050-941e-2c98d797d585
+[17:32:41,693][INFO][sys-#45][GridCacheProcessor] Finish proxy initialization, cacheName=tripleId, localNodeId=290eb9b2-d1e6-4050-941e-2c98d797d585
+[17:32:41,694][INFO][sys-#45][GridCacheProcessor] Finish proxy initialization, cacheName=Entity2IDcache, localNodeId=290eb9b2-d1e6-4050-941e-2c98d797d585
+[17:32:41,694][INFO][sys-#45][GridCacheProcessor] Finish proxy initialization, cacheName=ignite-sys-cache, localNodeId=290eb9b2-d1e6-4050-941e-2c98d797d585
+[17:32:41,694][INFO][sys-#45][GridCacheProcessor] Finish proxy initialization, cacheName=testTriplecache, localNodeId=290eb9b2-d1e6-4050-941e-2c98d797d585
+[17:32:41,694][INFO][sys-#45][GridCacheProcessor] Finish proxy initialization, cacheName=R_embeddingscache, localNodeId=290eb9b2-d1e6-4050-941e-2c98d797d585
+[17:32:41,694][INFO][sys-#45][GridCacheProcessor] Finish proxy initialization, cacheName=Relation2IDcache, localNodeId=290eb9b2-d1e6-4050-941e-2c98d797d585
+[17:32:41,694][INFO][sys-#45][GridCacheProcessor] Finish proxy initialization, cacheName=E_embeddingscache, localNodeId=290eb9b2-d1e6-4050-941e-2c98d797d585
+[17:32:41,697][INFO][sys-#45][GridDhtPartitionsExchangeFuture] Completed partition exchange [localNode=290eb9b2-d1e6-4050-941e-2c98d797d585, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], evt=NODE_JOINED, evtNode=TcpDiscoveryNode [id=290eb9b2-d1e6-4050-941e-2c98d797d585, addrs=[0:0:0:0:0:0:0:1%lo, 127.0.0.1], sockAddrs=[/0:0:0:0:0:0:0:1%lo:47501, /127.0.0.1:47501], discPort=47501, order=2, intOrder=2, lastExchangeTime=1580747561458, loc=true, ver=2.7.6#20190911-sha1:21f7ca41, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], durationFromInit=1192]
+[17:32:41,704][WARNING][sys-stripe-7-#8][GridQueryProcessor] Key-value pair is not inserted into any SQL table [cacheName=E_embeddingscache, valType=breeze.linalg.DenseVector$SerializedForm]
+[17:32:41,719][WARNING][sys-stripe-7-#8][GridQueryProcessor]   ^-- Value type(s) are specified via CacheConfiguration.indexedTypes or CacheConfiguration.queryEntities
+[17:32:41,720][WARNING][sys-stripe-7-#8][GridQueryProcessor]   ^-- Make sure that same type(s) used when adding Object or BinaryObject to cache
+[17:32:41,720][WARNING][sys-stripe-7-#8][GridQueryProcessor]   ^-- Otherwise, entries will be stored in cache, but not appear as SQL Table rows
+[17:32:41,834][INFO][exchange-worker-#43][GridCachePartitionExchangeManager] Rebalancing scheduled [order=[ignite-sys-cache, E_embeddingscache, Relation2IDcache, R_embeddingscache, testTriplecache, Entity2IDcache, tripleId, tripleHcache], top=AffinityTopologyVersion [topVer=2, minorTopVer=0], force=false, evt=NODE_JOINED, node=290eb9b2-d1e6-4050-941e-2c98d797d585]
+[17:32:41,835][INFO][exchange-worker-#43][GridDhtPartitionDemander] Prepared rebalancing [grp=ignite-sys-cache, mode=SYNC, supplier=9bee6f35-4aa6-4a68-b8ea-b2b2b464da75, partitionsCount=100, topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], parallelism=1]
+[17:32:41,868][INFO][sys-#46][GridDhtPartitionDemander] Started rebalance routine [ignite-sys-cache, supplier=9bee6f35-4aa6-4a68-b8ea-b2b2b464da75, topic=0, fullPartitions=[0-99], histPartitions=[]]
+[17:32:41,898][INFO][utility-#47][GridDhtPartitionDemander] Completed (final) rebalancing [grp=ignite-sys-cache, supplier=9bee6f35-4aa6-4a68-b8ea-b2b2b464da75, topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], progress=1/1, time=64 ms]
+[17:32:41,898][INFO][utility-#47][GridDhtPartitionDemander] Completed rebalance future: RebalanceFuture [grp=CacheGroupContext [grp=ignite-sys-cache], topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], rebalanceId=1, routines=1]
+[17:32:41,908][INFO][utility-#47][GridDhtPartitionDemander] Prepared rebalancing [grp=E_embeddingscache, mode=ASYNC, supplier=9bee6f35-4aa6-4a68-b8ea-b2b2b464da75, partitionsCount=487, topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], parallelism=1]
+[17:32:41,946][INFO][sys-#49][GridDhtPartitionDemander] Started rebalance routine [E_embeddingscache, supplier=9bee6f35-4aa6-4a68-b8ea-b2b2b464da75, topic=0, fullPartitions=[0-1, 5-7, 9, 15-16, 19-20, 22, 27-29, 31, 35, 39, 41, 44-45, 47-48, 52, 54-57, 59-60, 64, 66, 71-74, 79-82, 85, 88-89, 93, 95, 97, 99-102, 104-109, 111-112, 117-118, 120, 123-125, 127-129, 132-134, 141, 144-145, 147, 153, 160-161, 164-166, 170-171, 181-184, 187, 190-192, 195, 197-199, 201, 203-204, 208-211, 217-220, 222-224, 231-234, 237-243, 247, 250-254, 256, 258-259, 261, 265-266, 270, 272, 276, 279, 282, 285, 287, 289-290, 292-298, 302-303, 306-311, 314, 317-318, 322-324, 329-332, 334, 337, 339, 342-343, 350, 352, 355, 357-360, 362-364, 366-368, 370-371, 373-374, 377, 379-380, 384, 387-388, 391-394, 396, 401, 403, 407-410, 412, 414, 416, 418-420, 422, 424, 427-429, 431-432, 435, 440-442, 445, 454, 456-458, 461, 463, 466, 471, 473, 476, 478-485, 489, 491-495, 497, 499, 502, 506, 508-509, 513-521, 523-525, 527-530, 536, 538, 542, 545-548, 550, 555-556, 558-561, 563-564, 568-569, 571, 573-574, 580-582, 584, 586, 591-595, 597, 601-602, 604, 607-608, 610, 612, 614-615, 617, 621, 624, 627, 629, 631, 634, 639, 641-643, 645-646, 650, 653, 660-662, 664-666, 668, 674-676, 681, 683, 685, 688, 693-697, 700-701, 704-707, 709, 716, 718, 720, 725, 731-733, 737-738, 740, 742-743, 745, 748, 756, 759, 762, 764, 768-769, 772, 775, 777-778, 784, 788-790, 792-793, 795-796, 799, 801, 803-804, 806, 808, 813, 815-818, 821-822, 825, 827-828, 830-836, 842-844, 846-847, 850, 852, 856, 859-860, 866-869, 872, 874, 877, 879-881, 884, 886-887, 896, 900, 903, 905, 910-912, 914, 916-918, 920, 926, 928-931, 933, 935, 938, 940-941, 943, 945-946, 953, 957-960, 962, 968, 972, 975, 977-978, 980-982, 985-988, 990, 993-995, 999, 1004-1005, 1007, 1009-1012, 1015, 1019, 1021-1023], histPartitions=[]]
+[17:32:42,035][INFO][main][IgniteKernal] Performance suggestions for grid  (fix if possible)
+[17:32:42,036][INFO][main][IgniteKernal] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[17:32:42,036][INFO][main][IgniteKernal]   ^-- Disable grid events (remove 'includeEventTypes' from configuration)
+[17:32:42,036][INFO][main][IgniteKernal]   ^-- Enable G1 Garbage Collector (add '-XX:+UseG1GC' to JVM options)
+[17:32:42,036][INFO][main][IgniteKernal]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[17:32:42,036][INFO][main][IgniteKernal]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[17:32:42,036][INFO][main][IgniteKernal]   ^-- Disable processing of calls to System.gc() (add '-XX:+DisableExplicitGC' to JVM options)
+[17:32:42,036][INFO][main][IgniteKernal] Refer to this page for more performance suggestions: https://apacheignite.readme.io/docs/jvm-and-system-tuning
+[17:32:42,036][INFO][main][IgniteKernal] 
+[17:32:42,037][INFO][main][IgniteKernal] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[17:32:42,039][INFO][main][IgniteKernal] Data Regions Configured:
+[17:32:42,040][INFO][main][IgniteKernal]   ^-- default [initSize=256.0 MiB, maxSize=3.1 GiB, persistence=false]
+[17:32:42,040][INFO][main][IgniteKernal] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 2.7.6#20190911-sha1:21f7ca41c4348909e2fd26ccf59b5b2ce1f4474e
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 4.15.0-74-generic amd64
+>>> CPU(s): 4
+>>> Heap: 3.5GB
+>>> VM name: 8611@eis-seoul
+>>> Local node [ID=290EB9B2-D1E6-4050-941E-2C98D797D585, order=2, clientMode=false]
+>>> Local node addresses: [0:0:0:0:0:0:0:1%lo, 127.0.0.1]
+>>> Local ports: TCP:10801 TCP:11212 TCP:47101 UDP:47400 TCP:47501 
+
+[17:32:42,042][INFO][main][GridDiscoveryManager] Topology snapshot [ver=2, locNode=290eb9b2, servers=2, clients=0, state=ACTIVE, CPUs=8, offheap=6.2GB, heap=6.9GB]
+[17:32:42,075][INFO][main][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[17:32:42,083][INFO][main][GridDhtPartitionDemander] Cancelled rebalancing from all nodes [grp=tripleHcache, topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0]]
+[17:32:42,083][INFO][main][GridDhtPartitionDemander] Completed rebalance future: RebalanceFuture [grp=CacheGroupContext [grp=tripleHcache], topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], rebalanceId=1, routines=1]
+[17:32:42,083][INFO][main][GridDhtPartitionDemander] Cancelled rebalancing from all nodes [grp=tripleId, topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0]]
+[17:32:42,084][INFO][main][GridDhtPartitionDemander] Completed rebalance future: RebalanceFuture [grp=CacheGroupContext [grp=tripleId], topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], rebalanceId=1, routines=1]
+[17:32:42,084][INFO][main][GridDhtPartitionDemander] Cancelled rebalancing from all nodes [grp=Entity2IDcache, topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0]]
+[17:32:42,084][INFO][main][GridDhtPartitionDemander] Completed rebalance future: RebalanceFuture [grp=CacheGroupContext [grp=Entity2IDcache], topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], rebalanceId=1, routines=1]
+[17:32:42,084][INFO][main][GridDhtPartitionDemander] Cancelled rebalancing from all nodes [grp=testTriplecache, topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0]]
+[17:32:42,084][INFO][main][GridDhtPartitionDemander] Completed rebalance future: RebalanceFuture [grp=CacheGroupContext [grp=testTriplecache], topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], rebalanceId=1, routines=1]
+[17:32:42,084][INFO][main][GridDhtPartitionDemander] Cancelled rebalancing from all nodes [grp=R_embeddingscache, topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0]]
+[17:32:42,084][INFO][main][GridDhtPartitionDemander] Completed rebalance future: RebalanceFuture [grp=CacheGroupContext [grp=R_embeddingscache], topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], rebalanceId=1, routines=1]
+[17:32:42,085][INFO][main][GridDhtPartitionDemander] Cancelled rebalancing from all nodes [grp=Relation2IDcache, topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0]]
+[17:32:42,085][INFO][main][GridDhtPartitionDemander] Completed rebalance future: RebalanceFuture [grp=CacheGroupContext [grp=Relation2IDcache], topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], rebalanceId=1, routines=1]
+[17:32:42,190][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=494, val=494, hasValBytes=true]
+[17:32:42,191][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=582, val=582, hasValBytes=true]
+[17:32:42,191][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=582, val=582, hasValBytes=true]
+[17:32:42,193][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=509, val=509, hasValBytes=true]
+[17:32:42,196][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=109, val=1133, hasValBytes=true]
+[17:32:42,205][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=410, val=410, hasValBytes=true]
+[17:32:42,207][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=410, val=410, hasValBytes=true]
+[17:32:42,208][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=958, val=958, hasValBytes=true]
+[17:32:42,209][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=432, val=432, hasValBytes=true]
+[17:32:42,209][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=634, val=634, hasValBytes=true]
+[17:32:42,210][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=634, val=634, hasValBytes=true]
+[17:32:42,210][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=440, val=440, hasValBytes=true]
+[17:32:42,210][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=738, val=738, hasValBytes=true]
+[17:32:42,210][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=738, val=738, hasValBytes=true]
+[17:32:42,211][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=738, val=738, hasValBytes=true]
+[17:32:42,211][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=738, val=738, hasValBytes=true]
+[17:32:42,210][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=440, val=440, hasValBytes=true]
+[17:32:42,209][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=958, val=958, hasValBytes=true]
+[17:32:42,213][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=440, val=440, hasValBytes=true]
+[17:32:42,213][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=440, val=440, hasValBytes=true]
+[17:32:42,213][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=144, val=144, hasValBytes=true]
+[17:32:42,213][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=144, val=144, hasValBytes=true]
+[17:32:42,214][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=232, val=232, hasValBytes=true]
+[17:32:42,214][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=232, val=232, hasValBytes=true]
+[17:32:42,214][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=456, val=456, hasValBytes=true]
+[17:32:42,214][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=456, val=456, hasValBytes=true]
+[17:32:42,216][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=318, val=318, hasValBytes=true]
+[17:32:42,216][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=318, val=318, hasValBytes=true]
+[17:32:42,217][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=768, val=768, hasValBytes=true]
+[17:32:42,217][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=768, val=768, hasValBytes=true]
+[17:32:42,218][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=456, val=456, hasValBytes=true]
+[17:32:42,218][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=456, val=456, hasValBytes=true]
+[17:32:42,219][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=440, val=440, hasValBytes=true]
+[17:32:42,219][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=986, val=986, hasValBytes=true]
+[17:32:42,219][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=440, val=440, hasValBytes=true]
+[17:32:42,219][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=986, val=986, hasValBytes=true]
+[17:32:42,219][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=960, val=960, hasValBytes=true]
+[17:32:42,220][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=66, val=1090, hasValBytes=true]
+[17:32:42,220][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=960, val=960, hasValBytes=true]
+[17:32:42,220][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=66, val=1090, hasValBytes=true]
+[17:32:42,220][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=232, val=232, hasValBytes=true]
+[17:32:42,220][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=232, val=232, hasValBytes=true]
+[17:32:42,220][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=978, val=978, hasValBytes=true]
+[17:32:42,221][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=978, val=978, hasValBytes=true]
+[17:32:42,221][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=546, val=546, hasValBytes=true]
+[17:32:42,221][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=546, val=546, hasValBytes=true]
+[17:32:42,222][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=232, val=232, hasValBytes=true]
+[17:32:42,223][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=232, val=232, hasValBytes=true]
+[17:32:42,223][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=896, val=896, hasValBytes=true]
+[17:32:42,223][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=896, val=896, hasValBytes=true]
+[17:32:42,223][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=303, val=1327, hasValBytes=true]
+[17:32:42,223][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=303, val=1327, hasValBytes=true]
+[17:32:42,225][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=407, val=407, hasValBytes=true]
+[17:32:42,225][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=407, val=407, hasValBytes=true]
+[17:32:42,226][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=66, val=66, hasValBytes=true]
+[17:32:42,226][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=66, val=66, hasValBytes=true]
+[17:32:42,227][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=303, val=1327, hasValBytes=true]
+[17:32:42,228][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=303, val=1327, hasValBytes=true]
+[17:32:42,229][WARNING][sys-stripe-3-#4][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=515, val=515, hasValBytes=true]
+[17:32:42,230][WARNING][sys-stripe-3-#4][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=515, val=515, hasValBytes=true]
+[17:32:42,232][WARNING][sys-stripe-3-#4][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=859, val=859, hasValBytes=true]
+[17:32:42,233][WARNING][sys-stripe-3-#4][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=859, val=859, hasValBytes=true]
+[17:32:42,233][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=428, val=428, hasValBytes=true]
+[17:32:42,234][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=428, val=428, hasValBytes=true]
+[17:32:42,236][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=73, val=73, hasValBytes=true]
+[17:32:42,236][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=73, val=73, hasValBytes=true]
+[17:32:42,236][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=109, val=1133, hasValBytes=true]
+[17:32:42,237][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=705, val=705, hasValBytes=true]
+[17:32:42,237][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=388, val=388, hasValBytes=true]
+[17:32:42,237][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=388, val=388, hasValBytes=true]
+[17:32:42,238][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=668, val=668, hasValBytes=true]
+[17:32:42,238][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=668, val=668, hasValBytes=true]
+[17:32:42,239][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=716, val=716, hasValBytes=true]
+[17:32:42,239][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=705, val=705, hasValBytes=true]
+[17:32:42,241][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=293, val=1317, hasValBytes=true]
+[17:32:42,241][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=293, val=1317, hasValBytes=true]
+[17:32:42,242][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=801, val=801, hasValBytes=true]
+[17:32:42,242][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=716, val=716, hasValBytes=true]
+[17:32:42,245][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=801, val=801, hasValBytes=true]
+[17:32:42,245][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=109, val=1133, hasValBytes=true]
+[17:32:42,245][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=109, val=1133, hasValBytes=true]
+[17:32:42,246][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=493, val=493, hasValBytes=true]
+[17:32:42,246][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=493, val=493, hasValBytes=true]
+[17:32:42,247][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=631, val=631, hasValBytes=true]
+[17:32:42,247][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=285, val=285, hasValBytes=true]
+[17:32:42,248][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=285, val=285, hasValBytes=true]
+[17:32:42,248][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=445, val=445, hasValBytes=true]
+[17:32:42,227][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=938, val=938, hasValBytes=true]
+[17:32:42,249][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=938, val=938, hasValBytes=true]
+[17:32:42,249][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=410, val=410, hasValBytes=true]
+[17:32:42,249][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=410, val=410, hasValBytes=true]
+[17:32:42,236][WARNING][sys-stripe-3-#4][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=339, val=339, hasValBytes=true]
+[17:32:42,233][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=160, val=1184, hasValBytes=true]
+[17:32:42,250][WARNING][sys-stripe-3-#4][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=339, val=339, hasValBytes=true]
+[17:32:42,232][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=582, val=582, hasValBytes=true]
+[17:32:42,251][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=582, val=582, hasValBytes=true]
+[17:32:42,252][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=44, val=44, hasValBytes=true]
+[17:32:42,250][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=160, val=1184, hasValBytes=true]
+[17:32:42,252][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=44, val=44, hasValBytes=true]
+[17:32:42,252][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=184, val=184, hasValBytes=true]
+[17:32:42,252][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=184, val=184, hasValBytes=true]
+[17:32:42,259][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=132, val=1156, hasValBytes=true]
+[17:32:42,259][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=132, val=1156, hasValBytes=true]
+[17:32:42,259][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=631, val=631, hasValBytes=true]
+[17:32:42,252][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=993, val=993, hasValBytes=true]
+[17:32:42,260][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=993, val=993, hasValBytes=true]
+[17:32:42,261][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=44, val=44, hasValBytes=true]
+[17:32:42,261][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=44, val=44, hasValBytes=true]
+[17:32:42,262][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=100, val=1124, hasValBytes=true]
+[17:32:42,262][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=100, val=1124, hasValBytes=true]
+[17:32:42,262][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=332, val=332, hasValBytes=true]
+[17:32:42,262][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=97, val=97, hasValBytes=true]
+[17:32:42,262][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=332, val=332, hasValBytes=true]
+[17:32:42,263][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=97, val=97, hasValBytes=true]
+[17:32:42,263][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=953, val=953, hasValBytes=true]
+[17:32:42,263][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=445, val=445, hasValBytes=true]
+[17:32:42,263][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=953, val=953, hasValBytes=true]
+[17:32:42,263][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=217, val=1241, hasValBytes=true]
+[17:32:42,263][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=217, val=1241, hasValBytes=true]
+[17:32:42,265][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=285, val=285, hasValBytes=true]
+[17:32:42,265][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=285, val=285, hasValBytes=true]
+[17:32:42,265][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=190, val=1214, hasValBytes=true]
+[17:32:42,266][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=190, val=1214, hasValBytes=true]
+[17:32:42,266][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=494, val=494, hasValBytes=true]
+[17:32:42,266][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=494, val=494, hasValBytes=true]
+[17:32:42,266][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=293, val=293, hasValBytes=true]
+[17:32:42,266][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=293, val=293, hasValBytes=true]
+[17:32:42,269][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=559, val=559, hasValBytes=true]
+[17:32:42,269][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=559, val=559, hasValBytes=true]
+[17:32:42,270][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=494, val=494, hasValBytes=true]
+[17:32:42,270][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=494, val=494, hasValBytes=true]
+[17:32:42,272][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=303, val=1327, hasValBytes=true]
+[17:32:42,272][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=303, val=1327, hasValBytes=true]
+[17:32:42,273][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=191, val=1215, hasValBytes=true]
+[17:32:42,273][WARNING][sys-stripe-3-#4][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=363, val=363, hasValBytes=true]
+[17:32:42,274][WARNING][sys-stripe-3-#4][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=363, val=363, hasValBytes=true]
+[17:32:42,274][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=994, val=994, hasValBytes=true]
+[17:32:42,275][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=994, val=994, hasValBytes=true]
+[17:32:42,276][WARNING][sys-stripe-3-#4][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=491, val=491, hasValBytes=true]
+[17:32:42,277][WARNING][sys-stripe-3-#4][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=491, val=491, hasValBytes=true]
+[17:32:42,279][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=109, val=1133, hasValBytes=true]
+[17:32:42,279][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=109, val=1133, hasValBytes=true]
+[17:32:42,280][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=938, val=938, hasValBytes=true]
+[17:32:42,280][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=938, val=938, hasValBytes=true]
+[17:32:42,286][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=476, val=476, hasValBytes=true]
+[17:32:42,287][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=476, val=476, hasValBytes=true]
+[17:32:42,290][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=960, val=960, hasValBytes=true]
+[17:32:42,290][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=668, val=668, hasValBytes=true]
+[17:32:42,290][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=668, val=668, hasValBytes=true]
+[17:32:42,292][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=978, val=978, hasValBytes=true]
+[17:32:42,292][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=556, val=556, hasValBytes=true]
+[17:32:42,292][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=978, val=978, hasValBytes=true]
+[17:32:42,292][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=556, val=556, hasValBytes=true]
+[17:32:42,293][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=306, val=1330, hasValBytes=true]
+[17:32:42,293][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=306, val=1330, hasValBytes=true]
+[17:32:42,293][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=978, val=978, hasValBytes=true]
+[17:32:42,293][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=428, val=428, hasValBytes=true]
+[17:32:42,294][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=191, val=1215, hasValBytes=true]
+[17:32:42,294][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=428, val=428, hasValBytes=true]
+[17:32:42,294][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=978, val=978, hasValBytes=true]
+[17:32:42,295][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=396, val=396, hasValBytes=true]
+[17:32:42,295][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=778, val=778, hasValBytes=true]
+[17:32:42,295][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=396, val=396, hasValBytes=true]
+[17:32:42,295][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=778, val=778, hasValBytes=true]
+[17:32:42,295][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=868, val=868, hasValBytes=true]
+[17:32:42,294][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=407, val=407, hasValBytes=true]
+[17:32:42,297][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=960, val=960, hasValBytes=true]
+[17:32:42,297][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=407, val=407, hasValBytes=true]
+[17:32:42,297][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=631, val=631, hasValBytes=true]
+[17:32:42,302][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=631, val=631, hasValBytes=true]
+[17:32:42,303][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=285, val=285, hasValBytes=true]
+[17:32:42,304][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=285, val=285, hasValBytes=true]
+[17:32:42,304][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=410, val=410, hasValBytes=true]
+[17:32:42,304][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=410, val=410, hasValBytes=true]
+[17:32:42,297][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=868, val=868, hasValBytes=true]
+[17:32:42,304][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=44, val=44, hasValBytes=true]
+[17:32:42,304][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=44, val=44, hasValBytes=true]
+[17:32:42,305][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=292, val=1316, hasValBytes=true]
+[17:32:42,305][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=292, val=1316, hasValBytes=true]
+[17:32:42,305][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=45, val=45, hasValBytes=true]
+[17:32:42,303][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=71, val=1095, hasValBytes=true]
+[17:32:42,305][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=868, val=868, hasValBytes=true]
+[17:32:42,306][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=868, val=868, hasValBytes=true]
+[17:32:42,307][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=668, val=668, hasValBytes=true]
+[17:32:42,307][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=668, val=668, hasValBytes=true]
+[17:32:42,309][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=71, val=1095, hasValBytes=true]
+[17:32:42,313][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=545, val=545, hasValBytes=true]
+[17:32:42,313][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=545, val=545, hasValBytes=true]
+[17:32:42,313][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=191, val=1215, hasValBytes=true]
+[17:32:42,314][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=191, val=1215, hasValBytes=true]
+[17:32:42,314][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=295, val=1319, hasValBytes=true]
+[17:32:42,314][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=295, val=1319, hasValBytes=true]
+[17:32:42,314][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=105, val=1129, hasValBytes=true]
+[17:32:42,315][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=105, val=1129, hasValBytes=true]
+[17:32:42,315][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=601, val=601, hasValBytes=true]
+[17:32:42,315][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=601, val=601, hasValBytes=true]
+[17:32:42,315][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=127, val=127, hasValBytes=true]
+[17:32:42,316][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=127, val=127, hasValBytes=true]
+[17:32:42,316][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=705, val=705, hasValBytes=true]
+[17:32:42,316][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=705, val=705, hasValBytes=true]
+[17:32:42,313][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=45, val=45, hasValBytes=true]
+[17:32:42,318][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=309, val=309, hasValBytes=true]
+[17:32:42,318][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=309, val=309, hasValBytes=true]
+[17:32:42,318][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=441, val=441, hasValBytes=true]
+[17:32:42,321][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=133, val=133, hasValBytes=true]
+[17:32:42,322][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=133, val=133, hasValBytes=true]
+[17:32:42,323][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=813, val=813, hasValBytes=true]
+[17:32:42,323][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=813, val=813, hasValBytes=true]
+[17:32:42,324][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=441, val=441, hasValBytes=true]
+[17:32:42,324][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=705, val=705, hasValBytes=true]
+[17:32:42,324][WARNING][sys-stripe-1-#2][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=705, val=705, hasValBytes=true]
+[17:32:42,352][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=440, val=440, hasValBytes=true]
+[17:32:42,352][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=440, val=440, hasValBytes=true]
+[17:32:42,358][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=410, val=410, hasValBytes=true]
+[17:32:42,358][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=410, val=410, hasValBytes=true]
+[17:32:42,360][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=933, val=933, hasValBytes=true]
+[17:32:42,360][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=933, val=933, hasValBytes=true]
+[17:32:42,373][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=933, val=933, hasValBytes=true]
+[17:32:42,374][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=933, val=933, hasValBytes=true]
+[17:32:42,380][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=445, val=445, hasValBytes=true]
+[17:32:42,381][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=445, val=445, hasValBytes=true]
+[17:32:42,383][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=39, val=39, hasValBytes=true]
+[17:32:42,383][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=39, val=39, hasValBytes=true]
+[17:32:42,394][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=860, val=860, hasValBytes=true]
+[17:32:42,395][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=860, val=860, hasValBytes=true]
+[17:32:42,397][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=650, val=650, hasValBytes=true]
+[17:32:42,397][WARNING][sys-stripe-2-#3][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=650, val=650, hasValBytes=true]
+[17:32:42,409][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=790, val=790, hasValBytes=true]
+[17:32:42,411][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=790, val=790, hasValBytes=true]
+[17:32:42,416][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=933, val=933, hasValBytes=true]
+[17:32:42,417][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=933, val=933, hasValBytes=true]
+[17:32:42,421][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=432, val=432, hasValBytes=true]
+[17:32:42,421][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=432, val=432, hasValBytes=true]
+[17:32:42,423][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=629, val=629, hasValBytes=true]
+[17:32:42,424][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=629, val=629, hasValBytes=true]
+[17:32:42,429][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=445, val=445, hasValBytes=true]
+[17:32:42,430][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=445, val=445, hasValBytes=true]
+[17:32:42,446][WARNING][sys-stripe-3-#4][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=859, val=859, hasValBytes=true]
+[17:32:42,447][WARNING][sys-stripe-3-#4][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=859, val=859, hasValBytes=true]
+[17:32:42,450][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=668, val=668, hasValBytes=true]
+[17:32:42,450][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=668, val=668, hasValBytes=true]
+[17:32:42,451][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=981, val=981, hasValBytes=true]
+[17:32:42,451][WARNING][sys-stripe-5-#6][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=981, val=981, hasValBytes=true]
+[17:32:42,452][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=1007, val=1007, hasValBytes=true]
+[17:32:42,452][WARNING][sys-stripe-7-#8][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=1007, val=1007, hasValBytes=true]
+[17:32:42,456][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=668, val=668, hasValBytes=true]
+[17:32:42,457][WARNING][sys-stripe-4-#5][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=668, val=668, hasValBytes=true]
+[17:32:42,458][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=456, val=456, hasValBytes=true]
+[17:32:42,458][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=456, val=456, hasValBytes=true]
+[17:32:42,474][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=542, val=542, hasValBytes=true]
+[17:32:42,475][WARNING][sys-stripe-6-#7][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=542, val=542, hasValBytes=true]
+[17:32:42,475][INFO][main][GridDhtPartitionDemander] Cancelled rebalancing from all nodes [grp=E_embeddingscache, topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0]]
+[17:32:42,475][INFO][main][GridDhtPartitionDemander] Completed rebalance future: RebalanceFuture [grp=CacheGroupContext [grp=E_embeddingscache], topVer=AffinityTopologyVersion [topVer=2, minorTopVer=0], rebalanceId=1, routines=1]
+[17:32:42,477][WARNING][sys-stripe-0-#1][GridDhtAtomicCache] <R_embeddingscache> Failed to update key on backup (local node is stopping): KeyCacheObjectImpl [part=120, val=120, hasValBytes=true]
+[17:32:42,482][INFO][tcp-disco-sock-reader-#6][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:43055, rmtPort=43055
+[17:32:42,496][INFO][main][GridCacheProcessor] Stopped cache [cacheName=ignite-sys-cache]
+[17:32:42,496][INFO][main][GridCacheProcessor] Stopped cache [cacheName=tripleHcache]
+[17:32:42,497][INFO][main][GridCacheProcessor] Stopped cache [cacheName=tripleId]
+[17:32:42,497][INFO][main][GridCacheProcessor] Stopped cache [cacheName=Entity2IDcache]
+[17:32:42,498][INFO][main][GridCacheProcessor] Stopped cache [cacheName=testTriplecache]
+[17:32:42,498][INFO][main][GridCacheProcessor] Stopped cache [cacheName=R_embeddingscache]
+[17:32:42,498][INFO][main][GridCacheProcessor] Stopped cache [cacheName=Relation2IDcache]
+[17:32:42,499][INFO][main][GridCacheProcessor] Stopped cache [cacheName=E_embeddingscache]
+[17:32:42,593][INFO][main][GridDeploymentLocalStore] Removed undeployed class: GridDeployment [ts=1580747561149, depMode=SHARED, clsLdr=sun.misc.Launcher$AppClassLoader@4e0e2f2a, clsLdrId=26b85eb0071-290eb9b2-d1e6-4050-941e-2c98d797d585, userVer=0, loc=true, sampleClsName=org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionFullMap, pendingUndeploy=false, undeployed=true, usage=0]
+[17:32:42,631][INFO][main][IgniteKernal] 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 2.7.6#20190911-sha1:21f7ca41c4348909e2fd26ccf59b5b2ce1f4474e stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Grid uptime: 00:00:00.590
+
+
