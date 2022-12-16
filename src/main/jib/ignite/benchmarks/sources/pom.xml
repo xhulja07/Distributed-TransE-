@@ -30,7 +30,7 @@
 
     <properties>
         <yardstick.version>0.8.3</yardstick.version>
-        <spring.version>5.2.20.RELEASE</spring.version>
+        <spring.version>5.2.21.RELEASE</spring.version>
     </properties>
 
     <dependencies>
